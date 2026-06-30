@@ -1,0 +1,14 @@
+{
+  "name": "competitor-monitor",
+  "version": "1.0.0",
+  "description": "竞品动态监控 - App Store 版本与交易所交易对采集",
+  "type": "module",
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "collect": "node scripts/collect.js",
+    "collect:pairs": "node scripts/collect-pairs.js"
+  },
+  "private": true
+}

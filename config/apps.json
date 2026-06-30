@@ -1,0 +1,30 @@
+[
+  {
+    "key": "binance",
+    "name": "Binance（币安）",
+    "trackId": 1436799971,
+    "bundleId": "com.czzhao.binance",
+    "idConfirmation": "iTunes search?term=Binance&country=hk 返回 Binance Switzerland AG 官方 App；lookup?id=1436799971 验证 bundleId=com.czzhao.binance"
+  },
+  {
+    "key": "okx",
+    "name": "OKX",
+    "trackId": 1327268470,
+    "bundleId": "com.okex.OKExAppstoreFull",
+    "idConfirmation": "iTunes search?term=OKX&country=hk 返回 OKX Inc. 主 App（非 OKX Wallet）；lookup?id=1327268470 验证"
+  },
+  {
+    "key": "bybit",
+    "name": "Bybit",
+    "trackId": 1488296980,
+    "bundleId": "com.bybit.app",
+    "idConfirmation": "iTunes lookup?bundleId=com.bybit.app&country=us 返回 trackId=1488296980；lookup?id=1488296980 验证"
+  },
+  {
+    "key": "bitget",
+    "name": "Bitget",
+    "trackId": 1442778704,
+    "bundleId": "com.bitget.exchange.global",
+    "idConfirmation": "iTunes search?term=Bitget&country=hk 返回 BG LIMITED 交易所 App（非 Bitget Wallet）；lookup?id=1442778704 验证"
+  }
+]
