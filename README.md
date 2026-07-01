@@ -22,7 +22,7 @@
 
   与上一份快照对比,识别新增交易对。
 
-- 数据以带日期的 JSON 快照形式本地存储,便于历史对比。
+- 数据以带日期的 JSON 快照形式存储(随仓库一起提交),便于历史对比与展示。
 
 ## 监控范围
 
@@ -91,6 +91,7 @@ npm run collect:pairs
 - 每次采集会在 `data/snapshots/YYYY-MM-DD.json` 保存快照
 - 终端会显示各 App 当前版本、发布日期、更新说明
 - 若存在上一份快照,会自动对比并标记 `versionChanged: true` 的 App
+- 容错:单个 App 采集失败时,该 App 会标记 `error` 且其余 App 正常保存,进程以非零退出码结束
 
 ### 交易对 (`npm run collect:pairs`)
 
@@ -98,6 +99,7 @@ npm run collect:pairs
 - 交易对统一格式为 `BASE/QUOTE`(如 `BTC/USDT`)
 - 终端会显示各交易所当前交易对数量及新增交易对
 - 若存在上一份快照,会自动对比 `comparison.newPairs`
+- 容错:单家交易所采集失败时,该交易所会标记 `error`、其余正常保存,该家本次跳过对比,进程以非零退出码结束
 
 ## 验证步骤
 

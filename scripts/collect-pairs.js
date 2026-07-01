@@ -188,7 +188,15 @@ const FETCHERS = {
 function buildComparison(exchanges, previous) {
   const newPairs = {};
   for (const [key, exchange] of Object.entries(exchanges)) {
-    const previousPairs = previous?.snapshot?.exchanges?.[key]?.pairs ?? null;
+    const previousExchange = previous?.snapshot?.exchanges?.[key];
+
+    // 本次该交易所采集失败，或上一份快照里这家也失败：数据不可靠，跳过对比
+    if (exchange.error || previousExchange?.error) {
+      newPairs[key] = [];
+      continue;
+    }
+
+    const previousPairs = previousExchange?.pairs ?? null;
     newPairs[key] = computeNewPairs(exchange.pairs, previousPairs);
   }
 
@@ -215,6 +223,13 @@ function printSummary(snapshot, snapshotPath) {
     const newPairs = snapshot.comparison.newPairs[config.key] ?? [];
 
     console.log(`${config.name}`);
+
+    if (exchange.error) {
+      console.log(`  采集失败: ${exchange.error}`);
+      console.log('');
+      continue;
+    }
+
     console.log(`  当前交易对数量: ${exchange.count}`);
 
     if (newPairs.length === 0) {
@@ -232,7 +247,11 @@ function printSummary(snapshot, snapshotPath) {
     (sum, pairs) => sum + pairs.length,
     0
   );
+  const failedCount = Object.values(snapshot.exchanges).filter((ex) => ex.error).length;
   console.log(`共发现 ${totalNew} 个新增交易对。`);
+  if (failedCount > 0) {
+    console.log(`其中 ${failedCount} 家交易所采集失败（详见上方）。`);
+  }
 }
 
 async function main() {
@@ -243,20 +262,22 @@ async function main() {
   const previous = findPreviousSnapshot(currentFilename);
 
   const exchanges = {};
+  const errors = [];
   for (const config of exchangesConfig) {
     const fetchPairs = FETCHERS[config.key];
     if (!fetchPairs) {
-      throw new Error(`未找到交易所采集函数: ${config.key}`);
+      errors.push(`${config.name}: 未找到采集函数`);
+      exchanges[config.key] = { pairs: [], count: 0, error: '未找到采集函数' };
+      continue;
     }
 
     try {
       const pairs = await fetchPairs();
-      exchanges[config.key] = {
-        pairs,
-        count: pairs.length,
-      };
+      exchanges[config.key] = { pairs, count: pairs.length, error: null };
     } catch (error) {
-      throw new Error(`${config.name}: ${error.message}`);
+      // 单家交易所失败不应中断其余采集：标记 error，继续下一家
+      errors.push(`${config.name}: ${error.message}`);
+      exchanges[config.key] = { pairs: [], count: 0, error: error.message };
     }
   }
 
@@ -273,6 +294,11 @@ async function main() {
   writeFileSync(snapshotPath, JSON.stringify(snapshot, null, 2) + '\n', 'utf8');
 
   printSummary(snapshot, snapshotPath);
+
+  // 部分交易所采集失败：快照已保存，但用非零退出码提示调用方
+  if (errors.length > 0) {
+    process.exitCode = 1;
+  }
 }
 
 main().catch((error) => {

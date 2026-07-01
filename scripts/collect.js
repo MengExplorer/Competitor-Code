@@ -25,7 +25,7 @@ function listSnapshotFiles() {
   }
 
   return readdirSync(SNAPSHOTS_DIR)
-    .filter((name) => name.endsWith('.json'))
+    .filter((name) => name.endsWith('.json') && !name.startsWith('pairs-'))
     .sort();
 }
 
@@ -84,6 +84,26 @@ function buildAppRecord(config, itunesResult, previousApp) {
     trackViewUrl: itunesResult.trackViewUrl ?? null,
     versionChanged,
     previousVersion,
+    error: null,
+  };
+}
+
+// 单个 App 采集失败时，仍保留一条记录（标记 error），不中断其余 App 的采集
+function buildFailedAppRecord(config, previousApp, errorMessage) {
+  return {
+    key: config.key,
+    name: config.name,
+    trackId: config.trackId,
+    bundleId: config.bundleId,
+    trackName: null,
+    sellerName: null,
+    version: null,
+    releaseDate: null,
+    releaseNotes: null,
+    trackViewUrl: null,
+    versionChanged: false,
+    previousVersion: previousApp?.version ?? null,
+    error: errorMessage,
   };
 }
 
@@ -101,6 +121,13 @@ function printSummary(snapshot, snapshotPath, previousSnapshot) {
   console.log('');
 
   for (const app of snapshot.apps) {
+    if (app.error) {
+      console.log(`【采集失败】 ${app.name}`);
+      console.log(`  原因: ${app.error}`);
+      console.log('');
+      continue;
+    }
+
     const status = app.versionChanged ? '【版本更新】' : '【无变化】';
     console.log(`${status} ${app.name}`);
     console.log(`  版本: ${app.version ?? '未知'}`);
@@ -116,7 +143,11 @@ function printSummary(snapshot, snapshotPath, previousSnapshot) {
   }
 
   const changedCount = snapshot.apps.filter((app) => app.versionChanged).length;
+  const failedCount = snapshot.apps.filter((app) => app.error).length;
   console.log(`共 ${snapshot.apps.length} 个 App，${changedCount} 个版本有变化。`);
+  if (failedCount > 0) {
+    console.log(`其中 ${failedCount} 个采集失败（详见上方）。`);
+  }
 }
 
 async function main() {
@@ -131,9 +162,15 @@ async function main() {
   );
 
   const apps = [];
+  const errors = [];
   for (const config of appsConfig) {
-    const itunesResult = await fetchAppFromItunes(config.trackId);
-    apps.push(buildAppRecord(config, itunesResult, previousByKey.get(config.key)));
+    try {
+      const itunesResult = await fetchAppFromItunes(config.trackId);
+      apps.push(buildAppRecord(config, itunesResult, previousByKey.get(config.key)));
+    } catch (error) {
+      errors.push(`${config.name}: ${error.message}`);
+      apps.push(buildFailedAppRecord(config, previousByKey.get(config.key), error.message));
+    }
   }
 
   const snapshot = {
@@ -146,6 +183,11 @@ async function main() {
   writeFileSync(snapshotPath, JSON.stringify(snapshot, null, 2) + '\n', 'utf8');
 
   printSummary(snapshot, snapshotPath, previousSnapshot);
+
+  // 部分 App 采集失败：快照已保存，但用非零退出码提示调用方
+  if (errors.length > 0) {
+    process.exitCode = 1;
+  }
 }
 
 main().catch((error) => {

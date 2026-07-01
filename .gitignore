@@ -1,5 +1,4 @@
 .env
 node_modules/
-data/snapshots/*.json
 .DS_Store
 *.log
