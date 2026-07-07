@@ -1,5 +1,5 @@
 {
-  "collectedAt": "2026-07-07T08:51:03.775Z",
+  "collectedAt": "2026-07-07T09:21:49.949Z",
   "storeCountry": "hk",
   "apps": [
     {
@@ -13,8 +13,8 @@
       "releaseDate": "2026-07-06T01:32:20Z",
       "releaseNotes": "我們優化了功能，以帶來更佳的應用體驗。後續還會有更多更新！",
       "trackViewUrl": "https://apps.apple.com/hk/app/%E5%B9%A3%E5%AE%89-%E8%B2%B7%E6%AF%94%E7%89%B9%E5%B9%A3-%E5%B0%B1%E7%94%A8%E5%85%A8%E7%90%83%E7%AC%AC%E4%B8%80%E6%8A%95%E8%B3%87%E7%90%86%E8%B2%A1%E9%A6%96%E9%81%B8%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3%E4%BA%A4%E6%98%93%E6%89%80/id1436799971?uo=4",
-      "versionChanged": true,
-      "previousVersion": "3.16.4",
+      "versionChanged": false,
+      "previousVersion": "3.17.1",
       "error": null
     },
     {
@@ -28,8 +28,8 @@
       "releaseDate": "2026-07-07T02:02:05Z",
       "releaseNotes": "我們優化了性能並修復了部分問題。\n立即更新 OKX App，讓您緊隨數字貨幣市場變幻，探索不一樣的 Web3 世界！\n\n歡迎大家提供意見指教。如果您有任何建議，可聯係我們的客服。",
       "trackViewUrl": "https://apps.apple.com/hk/app/okx-%E5%85%A8%E7%90%83%E5%8D%83%E8%90%AC%E7%94%A8%E6%88%B6%E7%9A%84%E5%8A%A0%E5%AF%86%E8%B3%87%E7%94%A2%E4%BA%A4%E6%98%93%E9%A6%96%E9%81%B8/id1327268470?uo=4",
-      "versionChanged": true,
-      "previousVersion": "6.177.1",
+      "versionChanged": false,
+      "previousVersion": "6.179.0",
       "error": null
     },
     {
@@ -58,8 +58,8 @@
       "releaseDate": "2026-06-30T10:20:38Z",
       "releaseNotes": "本次 Bitget 應用程式更新包括以下內容：\n- 槓桿交易對行情顯示邏輯最佳化\n- UEX 行情架構改版\n- AI One-page 功能優化\n- 統一帳戶支援冰山委託\n- 錯誤修復和其他改進",
       "trackViewUrl": "https://apps.apple.com/hk/app/bitget-%E6%AF%94%E7%89%B9%E5%B9%A3-%E4%BB%A5%E5%A4%AA%E5%B9%A3%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3%E4%BA%A4%E6%98%93%E6%89%80/id1442778704?uo=4",
-      "versionChanged": true,
-      "previousVersion": "2.86.0",
+      "versionChanged": false,
+      "previousVersion": "2.87.0",
       "error": null
     }
   ]
