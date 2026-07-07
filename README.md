@@ -57,7 +57,9 @@
 
 - `data/snapshots/` — 历史数据快照
 
-- `public/` — 前端展示页面
+- `public/` — 前端展示页面(打包后的单文件 `index.html`)
+
+- `frontend/` — 前端源码(React + TypeScript + Tailwind + shadcn/ui)
 
 ## 环境要求
 
@@ -116,6 +118,16 @@ npm run collect:pairs
 2. 检查 `data/snapshots/` 下是否生成 `pairs-YYYY-MM-DD.json`
 3. 再次运行,首次之后若无新上线交易对应显示「新增交易对: 无」
 4. (可选)手动修改上一份快照,删除某个交易对后再运行,该交易对应出现在新增列表
+
+## 前端展示页面
+
+采集到的数据通过一个网页集中展示,分「App 版本」和「新上线交易对」两个标签页。
+
+- **直接查看**:双击打开 `public/index.html` 即可(数据已内嵌在页面中,无需联网)。
+- **在线展示**:将 `public/` 部署到 GitHub Pages 等静态托管即可分享。
+- **源码与重新构建**:前端源码在 `frontend/` 目录,采集到新数据后如需更新页面,
+  参见 [`frontend/README.md`](frontend/README.md)。技术栈为 React + TypeScript + Tailwind + shadcn/ui,
+  最终打包为单个自包含 HTML。
 
 ## App Store ID 确认方式
 
