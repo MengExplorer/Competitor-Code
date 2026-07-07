@@ -2,7 +2,7 @@
   {
     "key": "binance",
     "name": "Binance（币安）",
-    "url": "https://api.binance.com/api/v3/exchangeInfo",
+    "url": "https://data-api.binance.vision/api/v3/exchangeInfo",
     "idConfirmation": "curl -s \"https://api.binance.com/api/v3/exchangeInfo?symbol=BTCUSDT\" | node -pe \"JSON.parse(fs.readFileSync(0,'utf8')).symbols[0]\""
   },
   {
@@ -14,7 +14,7 @@
   {
     "key": "bybit",
     "name": "Bybit",
-    "url": "https://api.bybit.com/v5/market/instruments-info?category=spot",
+    "url": "https://api.bytick.com/v5/market/instruments-info?category=spot",
     "idConfirmation": "curl -s \"https://api.bybit.com/v5/market/instruments-info?category=spot&symbol=BTCUSDT\" | node -pe \"JSON.parse(fs.readFileSync(0,'utf8')).result.list[0]\""
   },
   {

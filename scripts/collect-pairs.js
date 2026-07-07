@@ -71,7 +71,10 @@ function computeNewPairs(currentPairs, previousPairs) {
 async function fetchJson(url, exchangeName) {
   let response;
   try {
-    response = await fetch(url);
+    response = await fetch(url, {
+      // 部分交易所 API 会拒绝没有 User-Agent 的请求（返回 403）
+      headers: { 'User-Agent': 'Mozilla/5.0 (competitor-monitor)' },
+    });
   } catch (error) {
     const detail = error.cause?.code ?? error.message;
     throw new Error(`${exchangeName} API 请求失败 (${detail}): ${url}`);
@@ -85,8 +88,10 @@ async function fetchJson(url, exchangeName) {
 }
 
 async function fetchBinancePairs() {
+  // 使用币安公开行情数据域名：api.binance.com 会因法律原因封锁美国 IP（HTTP 451），
+  // data-api.binance.vision 是只读行情镜像，不做地区封锁，结构与 /api/v3 完全一致。
   const data = await fetchJson(
-    'https://api.binance.com/api/v3/exchangeInfo',
+    'https://data-api.binance.vision/api/v3/exchangeInfo',
     'Binance'
   );
 
@@ -129,8 +134,10 @@ async function fetchOkxPairs() {
 }
 
 async function fetchBybitPairs() {
+  // 使用 Bybit 备用域名 api.bytick.com：api.bybit.com 对美国/数据中心 IP 常返回 403，
+  // bytick.com 与主域名同一套 API，可绕开该限制。
   const data = await fetchJson(
-    'https://api.bybit.com/v5/market/instruments-info?category=spot',
+    'https://api.bytick.com/v5/market/instruments-info?category=spot',
     'Bybit'
   );
 

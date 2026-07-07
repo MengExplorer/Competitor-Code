@@ -166,10 +166,14 @@ curl "https://itunes.apple.com/lookup?id=1436799971&country=hk"
 
 | 交易所 | 端点 | 交易对字段 | 状态过滤 |
 | ------ | ---- | ---------- | -------- |
-| Binance | `GET /api/v3/exchangeInfo` | `baseAsset` + `quoteAsset` | `status=TRADING`, `isSpotTradingAllowed` |
+| Binance | `GET data-api.binance.vision/api/v3/exchangeInfo` | `baseAsset` + `quoteAsset` | `status=TRADING`, `isSpotTradingAllowed` |
 | OKX | `GET /api/v5/public/instruments?instType=SPOT` | `baseCcy` + `quoteCcy` | `state=live` |
-| Bybit | `GET /v5/market/instruments-info?category=spot` | `baseCoin` + `quoteCoin` | `status=Trading` |
+| Bybit | `GET api.bytick.com/v5/market/instruments-info?category=spot` | `baseCoin` + `quoteCoin` | `status=Trading` |
 | Bitget | `GET /api/v2/spot/public/symbols` | `baseCoin` + `quoteCoin` | `status=online` |
+
+> 关于地区封锁：`api.binance.com` 会封锁美国 IP(HTTP 451)、`api.bybit.com` 会拦截数据中心 IP(HTTP 403),
+> 而 GitHub Actions 的服务器在美国。因此改用不受地区封锁的镜像域名 `data-api.binance.vision`(币安只读行情)
+> 与备用域名 `api.bytick.com`(Bybit),并为请求带上 User-Agent。
 
 手动验证示例:
 
