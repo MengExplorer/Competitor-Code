@@ -4,7 +4,7 @@
 import type { AppSnapshot, PairsSnapshot } from '@/types';
 
 export const appSnapshot: AppSnapshot | null = {
-  "collectedAt": "2026-07-07T09:21:49.949Z",
+  "collectedAt": "2026-07-07T09:24:10.738Z",
   "storeCountry": "hk",
   "apps": [
     {
@@ -71,7 +71,7 @@ export const appSnapshot: AppSnapshot | null = {
 };
 
 export const pairsSnapshot: PairsSnapshot | null = {
-  "collectedAt": "2026-07-07T09:21:49.719Z",
+  "collectedAt": "2026-07-07T09:24:10.189Z",
   "pairFormat": "BASE/QUOTE",
   "exchanges": {
     "binance": {
