@@ -9,7 +9,7 @@
     "lint": "oxlint",
     "preview": "vite preview",
     "embed": "node scripts/embed-data.mjs",
-    "bundle": "parcel build index.html --dist-dir dist --no-source-maps --no-autoinstall && html-inline dist/index.html > bundle.html",
+    "bundle": "parcel build index.html --dist-dir dist --no-source-maps --no-autoinstall && html-inline dist/index.html > bundle.html && cp bundle.html ../docs/index.html",
     "artifact": "npm run embed && npm run bundle"
   },
   "dependencies": {

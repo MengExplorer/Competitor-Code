@@ -1,7 +1,7 @@
 # 前端展示页面
 
 竞品动态监控的展示页面。技术栈：React 18 + TypeScript + Vite + Tailwind CSS + shadcn/ui，
-最终打包成**单个自包含的 HTML 文件**，输出到仓库根目录的 `public/index.html`（可直接双击打开或部署到 GitHub Pages）。
+最终打包成**单个自包含的 HTML 文件**，输出到仓库根目录的 `docs/index.html`（GitHub Pages 的发布目录，也可直接双击打开）。
 
 ## 数据来源
 
@@ -22,8 +22,7 @@ pnpm dev            # 本地开发预览
 ```bash
 cd frontend
 pnpm install
-npm run artifact                 # = embed + 打包成单文件 bundle.html
-cp bundle.html ../public/index.html
+npm run artifact                 # = embed + 打包 + 自动更新 ../docs/index.html
 ```
 
 > ⚠️ 注意：构建工具（Parcel/Vite）**无法在路径包含冒号 `:` 的目录下工作**。

@@ -57,7 +57,7 @@
 
 - `data/snapshots/` — 历史数据快照
 
-- `public/` — 前端展示页面(打包后的单文件 `index.html`)
+- `docs/` — 前端展示页面(打包后的单文件 `index.html`,同时作为 GitHub Pages 发布目录)
 
 - `frontend/` — 前端源码(React + TypeScript + Tailwind + shadcn/ui)
 
@@ -123,11 +123,23 @@ npm run collect:pairs
 
 采集到的数据通过一个网页集中展示,分「App 版本」和「新上线交易对」两个标签页。
 
-- **直接查看**:双击打开 `public/index.html` 即可(数据已内嵌在页面中,无需联网)。
-- **在线展示**:将 `public/` 部署到 GitHub Pages 等静态托管即可分享。
+- **直接查看**:双击打开 `docs/index.html` 即可(数据已内嵌在页面中,无需联网)。
+- **在线展示**:仓库 Settings → Pages 选择 `main` 分支的 `/docs` 目录发布,即可获得公开网址。
 - **源码与重新构建**:前端源码在 `frontend/` 目录,采集到新数据后如需更新页面,
   参见 [`frontend/README.md`](frontend/README.md)。技术栈为 React + TypeScript + Tailwind + shadcn/ui,
   最终打包为单个自包含 HTML。
+
+## 自动化采集（GitHub Actions）
+
+仓库配置了云端定时任务（`.github/workflows/collect.yml`），无需本地开机：
+
+- **每天** 09:00（北京时间）采集交易对；
+- **每周一** 09:00 额外采集 App 版本；
+- 采集后自动重新生成展示页面并提交回仓库，GitHub Pages 随之更新。
+
+也可在仓库 **Actions** 页面点 **Run workflow** 手动触发一次（会同时采集 App 与交易对）。
+
+> 说明：GitHub 定时任务用 UTC，09:00 北京时间 = 01:00 UTC；高峰期定时触发可能延迟几分钟到半小时属正常现象。
 
 ## App Store ID 确认方式
 
