@@ -34,16 +34,24 @@ const pairsFiles = listJson((name) => name.startsWith(PAIRS_PREFIX));
 const appSnapshot = loadLatest(appFiles);
 const pairsSnapshot = loadLatest(pairsFiles);
 
+// 版本历史存放在 data/app-history.json（快照目录的上一级）
+const HISTORY_PATH = join(SNAPSHOTS_DIR, '..', 'app-history.json');
+const appHistory = existsSync(HISTORY_PATH)
+  ? JSON.parse(readFileSync(HISTORY_PATH, 'utf8'))
+  : {};
+
 const banner = `// 该文件由 scripts/embed-data.mjs 自动生成，请勿手动编辑。
 // 快照来源目录: ${SNAPSHOTS_DIR}
 // App 快照: ${appSnapshot?.filename ?? '无'}  |  交易对快照: ${pairsSnapshot?.filename ?? '无'}
-import type { AppSnapshot, PairsSnapshot } from '@/types';
+import type { AppSnapshot, PairsSnapshot, AppHistory } from '@/types';
 `;
 
 const body = `
 export const appSnapshot: AppSnapshot | null = ${JSON.stringify(appSnapshot?.data ?? null, null, 2)};
 
 export const pairsSnapshot: PairsSnapshot | null = ${JSON.stringify(pairsSnapshot?.data ?? null, null, 2)};
+
+export const appHistory: AppHistory = ${JSON.stringify(appHistory, null, 2)};
 `;
 
 mkdirSync(dirname(OUTPUT_PATH), { recursive: true });

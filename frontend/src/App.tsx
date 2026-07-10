@@ -1,5 +1,5 @@
-import { appSnapshot, pairsSnapshot } from '@/data/snapshots';
-import type { AppRecord, PairsSnapshot } from '@/types';
+import { appSnapshot, pairsSnapshot, appHistory } from '@/data/snapshots';
+import type { AppRecord, AppHistoryEntry, PairsSnapshot } from '@/types';
 import { Badge } from '@/components/ui/badge';
 import {
   Card,
@@ -9,7 +9,32 @@ import {
 } from '@/components/ui/card';
 import { Separator } from '@/components/ui/separator';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
-import { ArrowUpRight, ExternalLink, ArrowRight } from 'lucide-react';
+import {
+  Dialog,
+  DialogContent,
+  DialogHeader,
+  DialogTitle,
+  DialogTrigger,
+} from '@/components/ui/dialog';
+import { ArrowUpRight, ExternalLink, ArrowRight, History } from 'lucide-react';
+
+// 根据交易所与交易对拼出对应现货行情(K线)页面链接
+function buildPairUrl(exchangeKey: string, pair: string): string | null {
+  const [base, quote] = pair.split('/');
+  if (!base || !quote) return null;
+  switch (exchangeKey) {
+    case 'binance':
+      return `https://www.binance.com/en/trade/${base}_${quote}`;
+    case 'okx':
+      return `https://www.okx.com/trade-spot/${base.toLowerCase()}-${quote.toLowerCase()}`;
+    case 'bybit':
+      return `https://www.bybit.com/en/trade/spot/${base}/${quote}`;
+    case 'bitget':
+      return `https://www.bitget.com/spot/${base}${quote}`;
+    default:
+      return null;
+  }
+}
 
 const EXCHANGE_NAMES: Record<string, string> = {
   binance: 'Binance（币安）',
@@ -32,7 +57,62 @@ function formatDateTime(iso: string): string {
   )}:${pad(d.getMinutes())}`;
 }
 
-function AppCard({ app }: { app: AppRecord }) {
+function VersionHistoryDialog({
+  name,
+  history,
+}: {
+  name: string;
+  history: AppHistoryEntry[];
+}) {
+  return (
+    <Dialog>
+      <DialogTrigger asChild>
+        <button className="inline-flex items-center gap-1 text-xs font-medium text-zinc-500 transition-colors hover:text-zinc-900">
+          <History className="h-3 w-3" />
+          历史版本 ({history.length})
+        </button>
+      </DialogTrigger>
+      <DialogContent className="max-h-[80vh] overflow-y-auto sm:max-w-lg">
+        <DialogHeader>
+          <DialogTitle>{name} · 版本历史</DialogTitle>
+        </DialogHeader>
+        <ol className="relative space-y-5 border-l border-zinc-200 pl-5">
+          {history.map((entry, i) => (
+            <li key={entry.version} className="relative">
+              <span
+                className={`absolute -left-[1.42rem] top-1.5 h-2.5 w-2.5 rounded-full border-2 border-white ${
+                  i === 0 ? 'bg-amber-500' : 'bg-zinc-300'
+                }`}
+              />
+              <div className="flex items-baseline gap-2">
+                <span className="font-mono text-sm font-semibold text-zinc-900 tabular-nums">
+                  {entry.version}
+                </span>
+                {i === 0 && <span className="text-[10px] text-amber-600">最新</span>}
+                <span className="ml-auto text-xs tabular-nums text-zinc-400">
+                  {formatDate(entry.releaseDate)}
+                </span>
+              </div>
+              {entry.releaseNotes && (
+                <p className="mt-1 whitespace-pre-line text-xs leading-relaxed text-zinc-600">
+                  {entry.releaseNotes}
+                </p>
+              )}
+            </li>
+          ))}
+        </ol>
+      </DialogContent>
+    </Dialog>
+  );
+}
+
+function AppCard({
+  app,
+  history,
+}: {
+  app: AppRecord;
+  history: AppHistoryEntry[];
+}) {
   if (app.error) {
     return (
       <Card className="border-red-200 bg-red-50/40">
@@ -111,17 +191,22 @@ function AppCard({ app }: { app: AppRecord }) {
         )}
       </CardContent>
 
-      {app.trackViewUrl && (
-        <CardFooter className="pt-0">
-          <a
-            href={app.trackViewUrl}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center gap-1 text-xs font-medium text-zinc-500 transition-colors hover:text-zinc-900"
-          >
-            App Store 页面
-            <ExternalLink className="h-3 w-3" />
-          </a>
+      {(app.trackViewUrl || history.length > 0) && (
+        <CardFooter className="flex items-center gap-4 pt-0">
+          {app.trackViewUrl && (
+            <a
+              href={app.trackViewUrl}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1 text-xs font-medium text-zinc-500 transition-colors hover:text-zinc-900"
+            >
+              App Store 页面
+              <ExternalLink className="h-3 w-3" />
+            </a>
+          )}
+          {history.length > 0 && (
+            <VersionHistoryDialog name={app.name} history={history} />
+          )}
         </CardFooter>
       )}
     </Card>
@@ -199,14 +284,27 @@ function PairsSection({ snapshot }: { snapshot: PairsSnapshot | null }) {
                   </div>
                   {newPairs.length > 0 && (
                     <div className="flex flex-wrap gap-1.5">
-                      {newPairs.map((pair) => (
-                        <span
-                          key={pair}
-                          className="rounded border border-emerald-200 bg-emerald-50 px-1.5 py-0.5 font-mono text-xs text-emerald-800"
-                        >
-                          {pair}
-                        </span>
-                      ))}
+                      {newPairs.map((pair) => {
+                        const url = buildPairUrl(key, pair);
+                        const cls =
+                          'rounded border border-emerald-200 bg-emerald-50 px-1.5 py-0.5 font-mono text-xs text-emerald-800';
+                        return url ? (
+                          <a
+                            key={pair}
+                            href={url}
+                            target="_blank"
+                            rel="noreferrer"
+                            title={`在 ${name} 查看 ${pair} 行情`}
+                            className={`${cls} transition-colors hover:border-emerald-400 hover:bg-emerald-100`}
+                          >
+                            {pair}
+                          </a>
+                        ) : (
+                          <span key={pair} className={cls}>
+                            {pair}
+                          </span>
+                        );
+                      })}
                     </div>
                   )}
                 </>
@@ -309,7 +407,11 @@ function App() {
             ) : (
               <div className="grid gap-4 sm:grid-cols-2">
                 {apps.map((app) => (
-                  <AppCard key={app.key} app={app} />
+                  <AppCard
+                    key={app.key}
+                    app={app}
+                    history={appHistory[app.key] ?? []}
+                  />
                 ))}
               </div>
             )}

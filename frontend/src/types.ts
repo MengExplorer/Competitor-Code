@@ -22,6 +22,18 @@ export interface AppSnapshot {
   apps: AppRecord[];
 }
 
+export interface AppHistoryEntry {
+  key: string;
+  name: string;
+  version: string;
+  releaseDate: string | null;
+  releaseNotes: string | null;
+  recordedAt: string | null;
+}
+
+// appKey -> 最近 10 次版本变更（最新在前）
+export type AppHistory = Record<string, AppHistoryEntry[]>;
+
 export interface ExchangeData {
   pairs: string[];
   count: number;

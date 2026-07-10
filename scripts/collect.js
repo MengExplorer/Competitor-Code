@@ -2,6 +2,7 @@ import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from 
 import { resolve, dirname, join } from 'node:path';
 import { fileURLToPath } from 'node:url';
 import { loadEnv } from './load-env.js';
+import { rebuildAppHistory } from './build-app-history.js';
 
 loadEnv();
 
@@ -181,6 +182,9 @@ async function main() {
 
   const snapshotPath = join(SNAPSHOTS_DIR, currentFilename);
   writeFileSync(snapshotPath, JSON.stringify(snapshot, null, 2) + '\n', 'utf8');
+
+  // 更新版本历史（每个 App 最多保留最近 10 次版本变更）
+  rebuildAppHistory(SNAPSHOTS_DIR, join(ROOT, 'data', 'app-history.json'));
 
   printSummary(snapshot, snapshotPath, previousSnapshot);
 

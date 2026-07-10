@@ -1,0 +1,90 @@
+{
+  "binance": [
+    {
+      "key": "binance",
+      "name": "Binance（币安）",
+      "version": "3.17.1",
+      "releaseDate": "2026-07-06T01:32:20Z",
+      "releaseNotes": "我們優化了功能，以帶來更佳的應用體驗。後續還會有更多更新！",
+      "recordedAt": "2026-07-07T09:24:10.738Z"
+    },
+    {
+      "key": "binance",
+      "name": "Binance（币安）",
+      "version": "3.16.4",
+      "releaseDate": "2026-06-25T06:13:36Z",
+      "releaseNotes": "美股體驗優化，支持 FPSL。",
+      "recordedAt": "2026-06-30T08:45:53.260Z"
+    },
+    {
+      "key": "binance",
+      "name": "Binance（币安）",
+      "version": "3.16.1",
+      "releaseDate": "2026-06-17T03:49:13Z",
+      "releaseNotes": "美股體驗優化，支持 FPSL。",
+      "recordedAt": "2026-06-22T09:25:01.415Z"
+    }
+  ],
+  "okx": [
+    {
+      "key": "okx",
+      "name": "OKX",
+      "version": "6.179.0",
+      "releaseDate": "2026-07-07T02:02:05Z",
+      "releaseNotes": "我們優化了性能並修復了部分問題。\n立即更新 OKX App，讓您緊隨數字貨幣市場變幻，探索不一樣的 Web3 世界！\n\n歡迎大家提供意見指教。如果您有任何建議，可聯係我們的客服。",
+      "recordedAt": "2026-07-07T09:24:10.738Z"
+    },
+    {
+      "key": "okx",
+      "name": "OKX",
+      "version": "6.177.1",
+      "releaseDate": "2026-06-25T10:22:04Z",
+      "releaseNotes": "我們優化了性能並修復了部分問題。\n立即更新 OKX App，讓您緊隨數字貨幣市場變幻，探索不一樣的 Web3 世界！\n\n歡迎大家提供意見指教。如果您有任何建議，可聯係我們的客服。",
+      "recordedAt": "2026-06-30T08:45:53.260Z"
+    },
+    {
+      "key": "okx",
+      "name": "OKX",
+      "version": "6.176.1",
+      "releaseDate": "2026-06-18T03:07:17Z",
+      "releaseNotes": "我們優化了性能並修復了部分問題。\n立即更新 OKX App，讓您緊隨數字貨幣市場變幻，探索不一樣的 Web3 世界！\n\n歡迎大家提供意見指教。如果您有任何建議，可聯係我們的客服。",
+      "recordedAt": "2026-06-22T09:25:01.415Z"
+    }
+  ],
+  "bybit": [
+    {
+      "key": "bybit",
+      "name": "Bybit",
+      "version": "5.20.5",
+      "releaseDate": "2026-06-27T10:55:23Z",
+      "releaseNotes": "此版本更新包括：\n\n1. 用戶界面煥新升級，整體操作體驗更加絲滑流暢。\n2. 修復功能問題，提升應用穩定性，進一步優化使用體驗。",
+      "recordedAt": "2026-06-30T08:45:53.260Z"
+    },
+    {
+      "key": "bybit",
+      "name": "Bybit",
+      "version": "5.19.10",
+      "releaseDate": "2026-06-12T02:55:06Z",
+      "releaseNotes": "此版本更新包括：\n\n1. 用戶界面煥新升級，整體操作體驗更加絲滑流暢。\n2. 修復功能問題，提升應用穩定性，進一步優化使用體驗。",
+      "recordedAt": "2026-06-22T09:25:01.415Z"
+    }
+  ],
+  "bitget": [
+    {
+      "key": "bitget",
+      "name": "Bitget",
+      "version": "2.87.0",
+      "releaseDate": "2026-06-30T10:20:38Z",
+      "releaseNotes": "本次 Bitget 應用程式更新包括以下內容：\n- 槓桿交易對行情顯示邏輯最佳化\n- UEX 行情架構改版\n- AI One-page 功能優化\n- 統一帳戶支援冰山委託\n- 錯誤修復和其他改進",
+      "recordedAt": "2026-07-07T09:24:10.738Z"
+    },
+    {
+      "key": "bitget",
+      "name": "Bitget",
+      "version": "2.86.0",
+      "releaseDate": "2026-06-19T01:27:27Z",
+      "releaseNotes": "Bitget 全新版本來了，為您帶來更多實用功能：\n- 統一帳戶新增現貨保本價，資產管理更便利\n- 首頁個人中心 VIP 卡片優化，專屬權益一目了然\n- 錯誤修復及其他改進，使用更穩定更可靠\n我們不斷優化體驗，立即升級 Bitget，開啟您的全新交易旅程",
+      "recordedAt": "2026-06-22T09:25:01.415Z"
+    }
+  ]
+}
