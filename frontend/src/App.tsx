@@ -161,7 +161,12 @@ function PairsSection({ snapshot }: { snapshot: PairsSnapshot | null }) {
               <div className="flex items-center justify-between">
                 <h3 className="text-base font-semibold text-zinc-900">{name}</h3>
                 {ex.error ? (
-                  <Badge className="bg-red-100 text-red-700 hover:bg-red-100">采集失败</Badge>
+                  <Badge
+                    variant="secondary"
+                    className="bg-zinc-100 text-zinc-500 hover:bg-zinc-100"
+                  >
+                    暂不可用
+                  </Badge>
                 ) : newPairs.length > 0 ? (
                   <Badge className="bg-emerald-100 text-emerald-800 hover:bg-emerald-100">
                     +{newPairs.length} 新增
@@ -178,7 +183,12 @@ function PairsSection({ snapshot }: { snapshot: PairsSnapshot | null }) {
             </CardHeader>
             <CardContent className="space-y-3">
               {ex.error ? (
-                <p className="text-sm text-red-700">{ex.error}</p>
+                <div className="space-y-1">
+                  <p className="text-sm text-zinc-500">
+                    该交易所限制服务器所在地区访问，暂无法采集。
+                  </p>
+                  <p className="font-mono text-[11px] text-zinc-400">{ex.error}</p>
+                </div>
               ) : (
                 <>
                   <div className="text-sm text-zinc-500">

@@ -1,5 +1,5 @@
 // 该文件由 scripts/embed-data.mjs 自动生成，请勿手动编辑。
-// 快照来源目录: /home/runner/work/Competitor-Code/Competitor-Code/data/snapshots
+// 快照来源目录: /Users/mm/Coding/Competitor:Code/data/snapshots
 // App 快照: 2026-07-07.json  |  交易对快照: pairs-2026-07-07.json
 import type { AppSnapshot, PairsSnapshot } from '@/types';
 

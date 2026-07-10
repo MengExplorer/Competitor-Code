@@ -29,18 +29,19 @@ jobs:
         with:
           node-version: '22'
 
-      # 币对：每天都采集；手动触发时也采集
+      # 币对：每天都采集；手动触发时也采集。
+      # 已知部分交易所会因地区封锁失败（如 Bybit 封锁数据中心 IP）：
+      # 用 "|| echo" 吞掉非零退出码，不让整个流程报错；失败详情见上方日志与页面，
+      # 成功的交易所数据照常保存。
       - name: 采集交易对（每天）
-        continue-on-error: true
-        run: node scripts/collect-pairs.js
+        run: node scripts/collect-pairs.js || echo "⚠️ 部分交易所采集失败（详见上方日志），继续。"
 
       # App 版本：仅在周一采集；手动触发时也采集
       # date -u +%u 返回星期几，1 = 周一
       - name: 采集 App 版本（每周一）
-        continue-on-error: true
         run: |
           if [ "${{ github.event_name }}" = "workflow_dispatch" ] || [ "$(date -u +%u)" = "1" ]; then
-            node scripts/collect.js
+            node scripts/collect.js || echo "⚠️ 部分 App 采集失败（详见上方日志），继续。"
           else
             echo "今天不是周一，跳过 App 版本采集。"
           fi
