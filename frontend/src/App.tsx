@@ -363,18 +363,32 @@ function App() {
               币安 · OKX · Bybit · Bitget — App 版本与现货交易对追踪
             </p>
           </div>
-          {appSnapshot && (
+          {(appSnapshot || pairsSnapshot) && (
             <div className="text-xs text-zinc-400 sm:text-right">
-              <div>
-                采集时间 ·{' '}
-                <span className="tabular-nums text-zinc-200">
-                  {formatDateTime(appSnapshot.collectedAt)}
-                </span>
-              </div>
-              <div className="mt-0.5">
-                App Store 区域 ·{' '}
-                <span className="uppercase text-zinc-200">{appSnapshot.storeCountry}</span>
-              </div>
+              {appSnapshot && (
+                <div>
+                  App 版本采集 ·{' '}
+                  <span className="tabular-nums text-zinc-200">
+                    {formatDateTime(appSnapshot.collectedAt)}
+                  </span>
+                  <span className="text-zinc-500">（每周一）</span>
+                </div>
+              )}
+              {pairsSnapshot && (
+                <div className="mt-0.5">
+                  交易对采集 ·{' '}
+                  <span className="tabular-nums text-zinc-200">
+                    {formatDateTime(pairsSnapshot.collectedAt)}
+                  </span>
+                  <span className="text-zinc-500">（每天）</span>
+                </div>
+              )}
+              {appSnapshot && (
+                <div className="mt-0.5">
+                  App Store 区域 ·{' '}
+                  <span className="uppercase text-zinc-200">{appSnapshot.storeCountry}</span>
+                </div>
+              )}
             </div>
           )}
         </div>
