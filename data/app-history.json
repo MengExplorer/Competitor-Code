@@ -3,6 +3,14 @@
     {
       "key": "binance",
       "name": "Binance（币安）",
+      "version": "3.17.3",
+      "releaseDate": "2026-07-10T06:04:37Z",
+      "releaseNotes": "我們優化了功能，以帶來更佳的應用體驗。後續還會有更多更新！",
+      "recordedAt": "2026-07-13T04:23:51.900Z"
+    },
+    {
+      "key": "binance",
+      "name": "Binance（币安）",
       "version": "3.17.1",
       "releaseDate": "2026-07-06T01:32:20Z",
       "releaseNotes": "我們優化了功能，以帶來更佳的應用體驗。後續還會有更多更新！",
@@ -55,6 +63,14 @@
     {
       "key": "bybit",
       "name": "Bybit",
+      "version": "5.21.0",
+      "releaseDate": "2026-07-11T04:02:06Z",
+      "releaseNotes": "此版本更新包括：\n\n1. 用戶界面煥新升級，整體操作體驗更加絲滑流暢。\n2. 修復功能問題，提升應用穩定性，進一步優化使用體驗。",
+      "recordedAt": "2026-07-13T04:23:51.900Z"
+    },
+    {
+      "key": "bybit",
+      "name": "Bybit",
       "version": "5.20.5",
       "releaseDate": "2026-06-27T10:55:23Z",
       "releaseNotes": "此版本更新包括：\n\n1. 用戶界面煥新升級，整體操作體驗更加絲滑流暢。\n2. 修復功能問題，提升應用穩定性，進一步優化使用體驗。",
@@ -70,6 +86,14 @@
     }
   ],
   "bitget": [
+    {
+      "key": "bitget",
+      "name": "Bitget",
+      "version": "2.88.0",
+      "releaseDate": "2026-07-09T02:09:48Z",
+      "releaseNotes": "本次 Bitget 應用程式更新包括以下內容：\n- 槓桿交易對行情顯示邏輯最佳化\n- UEX 行情架構改版\n- AI One-page 功能優化\n- 統一帳戶支援冰山委託\n- 錯誤修復和其他改進",
+      "recordedAt": "2026-07-13T04:23:51.900Z"
+    },
     {
       "key": "bitget",
       "name": "Bitget",
