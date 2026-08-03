@@ -3,6 +3,14 @@
     {
       "key": "binance",
       "name": "Binance（币安）",
+      "version": "3.18.4",
+      "releaseDate": "2026-08-01T02:46:23Z",
+      "releaseNotes": "優化幣種 PNL 分享體驗",
+      "recordedAt": "2026-08-03T04:22:53.448Z"
+    },
+    {
+      "key": "binance",
+      "name": "Binance（币安）",
       "version": "3.17.3",
       "releaseDate": "2026-07-10T06:04:37Z",
       "releaseNotes": "我們優化了功能，以帶來更佳的應用體驗。後續還會有更多更新！",
@@ -37,6 +45,14 @@
     {
       "key": "okx",
       "name": "OKX",
+      "version": "6.182.0",
+      "releaseDate": "2026-07-29T02:28:18Z",
+      "releaseNotes": "我們優化了性能並修復了部分問題。\n立即更新 OKX App，讓您緊隨數字貨幣市場變幻，探索不一樣的 Web3 世界！\n\n歡迎大家提供意見指教。如果您有任何建議，可聯係我們的客服。",
+      "recordedAt": "2026-08-03T04:22:53.448Z"
+    },
+    {
+      "key": "okx",
+      "name": "OKX",
       "version": "6.179.0",
       "releaseDate": "2026-07-07T02:02:05Z",
       "releaseNotes": "我們優化了性能並修復了部分問題。\n立即更新 OKX App，讓您緊隨數字貨幣市場變幻，探索不一樣的 Web3 世界！\n\n歡迎大家提供意見指教。如果您有任何建議，可聯係我們的客服。",
@@ -63,6 +79,14 @@
     {
       "key": "bybit",
       "name": "Bybit",
+      "version": "5.22.5",
+      "releaseDate": "2026-07-30T07:30:16Z",
+      "releaseNotes": "此版本更新包括：\n\n1. 用戶界面煥新升級，整體操作體驗更加絲滑流暢。\n2. 修復功能問題，提升應用穩定性，進一步優化使用體驗。",
+      "recordedAt": "2026-08-03T04:22:53.448Z"
+    },
+    {
+      "key": "bybit",
+      "name": "Bybit",
       "version": "5.21.0",
       "releaseDate": "2026-07-11T04:02:06Z",
       "releaseNotes": "此版本更新包括：\n\n1. 用戶界面煥新升級，整體操作體驗更加絲滑流暢。\n2. 修復功能問題，提升應用穩定性，進一步優化使用體驗。",
@@ -86,6 +110,14 @@
     }
   ],
   "bitget": [
+    {
+      "key": "bitget",
+      "name": "Bitget",
+      "version": "2.90.0",
+      "releaseDate": "2026-07-29T01:46:10Z",
+      "releaseNotes": "Bitget 全新版本來了，為您帶來更多實用功能：\n- 統一帳戶支援分時委託（現貨/合約），下單更具彈性\n- 交易機器人體驗券卡片優化，權益訊息更清楚\n- UTA 倉位支援無感升級，帳戶體驗更順暢\n- 錯誤修復及其他改進，使用更穩定更可靠\n我們不斷優化體驗，立即升級 Bitget，開啟您的全新交易旅程",
+      "recordedAt": "2026-08-03T04:22:53.448Z"
+    },
     {
       "key": "bitget",
       "name": "Bitget",
