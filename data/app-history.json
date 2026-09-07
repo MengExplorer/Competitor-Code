@@ -3,6 +3,14 @@
     {
       "key": "binance",
       "name": "Binance（币安）",
+      "version": "3.20.2",
+      "releaseDate": "2026-09-04T13:06:30Z",
+      "releaseNotes": "修復了部分用戶反饋的問題，並優化產品體驗，請更新至最新版本以獲取更流暢的使用體驗。",
+      "recordedAt": "2026-09-07T05:24:59.692Z"
+    },
+    {
+      "key": "binance",
+      "name": "Binance（币安）",
       "version": "3.20.0",
       "releaseDate": "2026-08-28T02:25:40Z",
       "releaseNotes": "修復了部分用戶反饋的問題，並優化產品體驗，請更新至最新版本以獲取更流暢的使用體驗。",
@@ -74,6 +82,14 @@
     }
   ],
   "okx": [
+    {
+      "key": "okx",
+      "name": "OKX",
+      "version": "6.187.1",
+      "releaseDate": "2026-09-02T03:03:55Z",
+      "releaseNotes": "我們優化了性能並修復了部分問題。\n立即更新 OKX App，讓您緊隨數字貨幣市場變幻，探索不一樣的 Web3 世界！\n\n歡迎大家提供意見指教。如果您有任何建議，可聯係我們的客服。",
+      "recordedAt": "2026-09-07T05:24:59.692Z"
+    },
     {
       "key": "okx",
       "name": "OKX",
