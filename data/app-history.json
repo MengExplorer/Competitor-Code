@@ -3,6 +3,14 @@
     {
       "key": "binance",
       "name": "Binance（币安）",
+      "version": "3.20.5",
+      "releaseDate": "2026-09-15T06:25:20Z",
+      "releaseNotes": "修復了部分用戶反饋的問題，並優化產品體驗，請更新至最新版本以獲取更流暢的使用體驗。",
+      "recordedAt": "2026-09-21T05:37:22.650Z"
+    },
+    {
+      "key": "binance",
+      "name": "Binance（币安）",
       "version": "3.20.4",
       "releaseDate": "2026-09-11T06:21:35Z",
       "releaseNotes": "修復了部分用戶反饋的問題，並優化產品體驗，請更新至最新版本以獲取更流暢的使用體驗。",
@@ -71,17 +79,17 @@
       "releaseDate": "2026-07-06T01:32:20Z",
       "releaseNotes": "我們優化了功能，以帶來更佳的應用體驗。後續還會有更多更新！",
       "recordedAt": "2026-07-07T09:24:10.738Z"
-    },
-    {
-      "key": "binance",
-      "name": "Binance（币安）",
-      "version": "3.16.4",
-      "releaseDate": "2026-06-25T06:13:36Z",
-      "releaseNotes": "美股體驗優化，支持 FPSL。",
-      "recordedAt": "2026-06-30T08:45:53.260Z"
     }
   ],
   "okx": [
+    {
+      "key": "okx",
+      "name": "OKX",
+      "version": "6.189.0",
+      "releaseDate": "2026-09-15T06:56:11Z",
+      "releaseNotes": "我們優化了性能並修復了部分問題。\n立即更新 OKX App，讓您緊隨數字貨幣市場變幻，探索不一樣的 Web3 世界！\n\n歡迎大家提供意見指教。如果您有任何建議，可聯係我們的客服。",
+      "recordedAt": "2026-09-21T05:37:22.650Z"
+    },
     {
       "key": "okx",
       "name": "OKX",
@@ -153,17 +161,17 @@
       "releaseDate": "2026-06-25T10:22:04Z",
       "releaseNotes": "我們優化了性能並修復了部分問題。\n立即更新 OKX App，讓您緊隨數字貨幣市場變幻，探索不一樣的 Web3 世界！\n\n歡迎大家提供意見指教。如果您有任何建議，可聯係我們的客服。",
       "recordedAt": "2026-06-30T08:45:53.260Z"
-    },
-    {
-      "key": "okx",
-      "name": "OKX",
-      "version": "6.176.1",
-      "releaseDate": "2026-06-18T03:07:17Z",
-      "releaseNotes": "我們優化了性能並修復了部分問題。\n立即更新 OKX App，讓您緊隨數字貨幣市場變幻，探索不一樣的 Web3 世界！\n\n歡迎大家提供意見指教。如果您有任何建議，可聯係我們的客服。",
-      "recordedAt": "2026-06-22T09:25:01.415Z"
     }
   ],
   "bybit": [
+    {
+      "key": "bybit",
+      "name": "Bybit",
+      "version": "5.25.5",
+      "releaseDate": "2026-09-16T02:48:12Z",
+      "releaseNotes": "此版本更新包括：\n\n1. 用戶界面煥新升級，整體操作體驗更加絲滑流暢。\n2. 修復功能問題，提升應用穩定性，進一步優化使用體驗。",
+      "recordedAt": "2026-09-21T05:37:22.650Z"
+    },
     {
       "key": "bybit",
       "name": "Bybit",
