@@ -1,6 +1,6 @@
 // 该文件由 scripts/embed-data.mjs 自动生成，请勿手动编辑。
 // 快照来源目录: /home/runner/work/Competitor-Code/Competitor-Code/data/snapshots
-// App 快照: 2026-10-05.json  |  交易对快照: pairs-2026-10-10.json
+// App 快照: 2026-10-05.json  |  交易对快照: pairs-2026-10-11.json
 import type { AppSnapshot, PairsSnapshot, AppHistory } from '@/types';
 
 export const appSnapshot: AppSnapshot | null = {
@@ -71,7 +71,7 @@ export const appSnapshot: AppSnapshot | null = {
 };
 
 export const pairsSnapshot: PairsSnapshot | null = {
-  "collectedAt": "2026-10-10T06:30:48.451Z",
+  "collectedAt": "2026-10-11T06:36:41.576Z",
   "pairFormat": "BASE/QUOTE",
   "exchanges": {
     "binance": {
@@ -6008,19 +6008,10 @@ export const pairsSnapshot: PairsSnapshot | null = {
     }
   },
   "comparison": {
-    "previousSnapshot": "pairs-2026-10-09.json",
+    "previousSnapshot": "pairs-2026-10-10.json",
     "newPairs": {
       "binance": [],
-      "okx": [
-        "XAEHR/USDT",
-        "XBRKB/USDT",
-        "XCRDO/USDT",
-        "XFLNC/USDT",
-        "XGPRO/USDT",
-        "XOUST/USDT",
-        "XPOET/USDT",
-        "XWEN/USDT"
-      ],
+      "okx": [],
       "bybit": [],
       "bitget": []
     }
