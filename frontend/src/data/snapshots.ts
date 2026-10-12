@@ -1,10 +1,10 @@
 // 该文件由 scripts/embed-data.mjs 自动生成，请勿手动编辑。
 // 快照来源目录: /home/runner/work/Competitor-Code/Competitor-Code/data/snapshots
-// App 快照: 2026-10-05.json  |  交易对快照: pairs-2026-10-11.json
+// App 快照: 2026-10-12.json  |  交易对快照: pairs-2026-10-12.json
 import type { AppSnapshot, PairsSnapshot, AppHistory } from '@/types';
 
 export const appSnapshot: AppSnapshot | null = {
-  "collectedAt": "2026-10-05T06:23:52.484Z",
+  "collectedAt": "2026-10-12T06:43:20.707Z",
   "storeCountry": "hk",
   "apps": [
     {
@@ -14,12 +14,12 @@ export const appSnapshot: AppSnapshot | null = {
       "bundleId": "com.czzhao.binance",
       "trackName": "幣安 - 買比特幣，就用全球第一投資理財首選加密貨幣交易所",
       "sellerName": "Binance Switzerland AG",
-      "version": "3.21.4",
-      "releaseDate": "2026-10-02T05:05:14Z",
-      "releaseNotes": "- 股票 K 線圖支援劃線。\n- 劃線資料雲端儲存，多端同步。",
+      "version": "3.22.0",
+      "releaseDate": "2026-10-12T03:37:14Z",
+      "releaseNotes": "- 我們已修復了漏洞並提升效能。敬請期待後續更新。",
       "trackViewUrl": "https://apps.apple.com/hk/app/%E5%B9%A3%E5%AE%89-%E8%B2%B7%E6%AF%94%E7%89%B9%E5%B9%A3-%E5%B0%B1%E7%94%A8%E5%85%A8%E7%90%83%E7%AC%AC%E4%B8%80%E6%8A%95%E8%B3%87%E7%90%86%E8%B2%A1%E9%A6%96%E9%81%B8%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3%E4%BA%A4%E6%98%93%E6%89%80/id1436799971?uo=4",
       "versionChanged": true,
-      "previousVersion": "3.21.2",
+      "previousVersion": "3.21.4",
       "error": null
     },
     {
@@ -29,12 +29,12 @@ export const appSnapshot: AppSnapshot | null = {
       "bundleId": "com.okex.OKExAppstoreFull",
       "trackName": "OKX — 全球千萬用戶的加密資產交易首選",
       "sellerName": "OKX Inc.",
-      "version": "6.191.1",
-      "releaseDate": "2026-10-02T01:44:39Z",
+      "version": "6.192.0",
+      "releaseDate": "2026-10-05T06:25:05Z",
       "releaseNotes": "我們優化了性能並修復了部分問題。\n立即更新 OKX App，讓您緊隨數字貨幣市場變幻，探索不一樣的 Web3 世界！\n\n歡迎大家提供意見指教。如果您有任何建議，可聯係我們的客服。",
       "trackViewUrl": "https://apps.apple.com/hk/app/okx-%E5%85%A8%E7%90%83%E5%8D%83%E8%90%AC%E7%94%A8%E6%88%B6%E7%9A%84%E5%8A%A0%E5%AF%86%E8%B3%87%E7%94%A2%E4%BA%A4%E6%98%93%E9%A6%96%E9%81%B8/id1327268470?uo=4",
       "versionChanged": true,
-      "previousVersion": "6.190.0",
+      "previousVersion": "6.191.1",
       "error": null
     },
     {
@@ -44,11 +44,11 @@ export const appSnapshot: AppSnapshot | null = {
       "bundleId": "com.bybit.app",
       "trackName": "Bybit：交易加密貨幣與股票",
       "sellerName": "Bybit Fintech Limited",
-      "version": "5.26.0",
-      "releaseDate": "2026-09-25T06:56:44Z",
-      "releaseNotes": "Bybit：加密貨幣、股票、合約及多資產新金融平台。\n\n新：Bybit AI，您的專屬 AI 助手，交易、查詢、一切盡在掌中。讓 AI 替您智慧交易，盡在 Bybit App。\n\n新：TradFi 永續期權。全天候交易 Tesla、NVIDIA、QQQ 等股票期權，支持碎股交易及全方位策略。\n\n此外，我們還進行了性能優化與問題修復。喜歡 Bybit 嗎？您的一句評價，是我們前進的動力。",
+      "version": "5.26.5",
+      "releaseDate": "2026-10-09T03:09:58Z",
+      "releaseNotes": "此版本更新包括：\n\n1. 用戶界面煥新升級，整體操作體驗更加絲滑流暢。\n2. 修復功能問題，提升應用穩定性，進一步優化使用體驗。",
       "trackViewUrl": "https://apps.apple.com/hk/app/bybit-%E4%BA%A4%E6%98%93%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3%E8%88%87%E8%82%A1%E7%A5%A8/id1488296980?uo=4",
-      "versionChanged": false,
+      "versionChanged": true,
       "previousVersion": "5.26.0",
       "error": null
     },
@@ -59,19 +59,19 @@ export const appSnapshot: AppSnapshot | null = {
       "bundleId": "com.bitget.exchange.global",
       "trackName": "Bitget-比特幣、以太幣加密貨幣交易所",
       "sellerName": "BG LIMITED",
-      "version": "2.94.0",
-      "releaseDate": "2026-10-04T07:30:59Z",
+      "version": "2.94.4",
+      "releaseDate": "2026-10-09T01:24:38Z",
       "releaseNotes": "Bitget 全新版本來了，為您帶來更多實用功能：\n- 標的名稱顯示樣式優化，資訊辨識更清晰\n- UTA 帳戶升級流程優化，升級更順暢\n- 支援合約未平倉數據顯示，行情資訊更完整\n- 錯誤修復及其他改進，使用更穩定更可靠\n我們不斷優化體驗，立即升級 Bitget，開啟您的全新交易旅程",
       "trackViewUrl": "https://apps.apple.com/hk/app/bitget-%E6%AF%94%E7%89%B9%E5%B9%A3-%E4%BB%A5%E5%A4%AA%E5%B9%A3%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3%E4%BA%A4%E6%98%93%E6%89%80/id1442778704?uo=4",
       "versionChanged": true,
-      "previousVersion": "2.93.1",
+      "previousVersion": "2.94.0",
       "error": null
     }
   ]
 };
 
 export const pairsSnapshot: PairsSnapshot | null = {
-  "collectedAt": "2026-10-11T06:36:41.576Z",
+  "collectedAt": "2026-10-12T06:43:20.149Z",
   "pairFormat": "BASE/QUOTE",
   "exchanges": {
     "binance": {
@@ -2407,6 +2407,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "XAEHR/USDT",
         "XALAB/USDT",
         "XAMAT/USDT",
+        "XAMC/USDT",
         "XAMD/USDC",
         "XAMD/USDT",
         "XAMZN/USDC",
@@ -2511,6 +2512,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "XPOET/USDT",
         "XPOPMART/USDT",
         "XQCOM/USDT",
+        "XQNT/USDT",
         "XQQQ/USDC",
         "XQQQ/USDT",
         "XRDDT/USDT",
@@ -2610,7 +2612,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "ZRX/USDC",
         "ZRX/USDT"
       ],
-      "count": 1152,
+      "count": 1154,
       "error": null
     },
     "bybit": {
@@ -6008,10 +6010,13 @@ export const pairsSnapshot: PairsSnapshot | null = {
     }
   },
   "comparison": {
-    "previousSnapshot": "pairs-2026-10-10.json",
+    "previousSnapshot": "pairs-2026-10-11.json",
     "newPairs": {
       "binance": [],
-      "okx": [],
+      "okx": [
+        "XAMC/USDT",
+        "XQNT/USDT"
+      ],
       "bybit": [],
       "bitget": []
     }
@@ -6020,6 +6025,14 @@ export const pairsSnapshot: PairsSnapshot | null = {
 
 export const appHistory: AppHistory = {
   "binance": [
+    {
+      "key": "binance",
+      "name": "Binance（币安）",
+      "version": "3.22.0",
+      "releaseDate": "2026-10-12T03:37:14Z",
+      "releaseNotes": "- 我們已修復了漏洞並提升效能。敬請期待後續更新。",
+      "recordedAt": "2026-10-12T06:43:20.707Z"
+    },
     {
       "key": "binance",
       "name": "Binance（币安）",
@@ -6091,17 +6104,17 @@ export const appHistory: AppHistory = {
       "releaseDate": "2026-08-07T16:27:07Z",
       "releaseNotes": "修復了部分用戶反饋的問題，並優化產品體驗，請更新至最新版本以獲取更流暢的使用體驗。",
       "recordedAt": "2026-08-10T03:05:46.573Z"
-    },
-    {
-      "key": "binance",
-      "name": "Binance（币安）",
-      "version": "3.18.4",
-      "releaseDate": "2026-08-01T02:46:23Z",
-      "releaseNotes": "優化幣種 PNL 分享體驗",
-      "recordedAt": "2026-08-03T04:22:53.448Z"
     }
   ],
   "okx": [
+    {
+      "key": "okx",
+      "name": "OKX",
+      "version": "6.192.0",
+      "releaseDate": "2026-10-05T06:25:05Z",
+      "releaseNotes": "我們優化了性能並修復了部分問題。\n立即更新 OKX App，讓您緊隨數字貨幣市場變幻，探索不一樣的 Web3 世界！\n\n歡迎大家提供意見指教。如果您有任何建議，可聯係我們的客服。",
+      "recordedAt": "2026-10-12T06:43:20.707Z"
+    },
     {
       "key": "okx",
       "name": "OKX",
@@ -6173,17 +6186,17 @@ export const appHistory: AppHistory = {
       "releaseDate": "2026-08-04T08:39:55Z",
       "releaseNotes": "我們優化了性能並修復了部分問題。\n立即更新 OKX App，讓您緊隨數字貨幣市場變幻，探索不一樣的 Web3 世界！\n\n歡迎大家提供意見指教。如果您有任何建議，可聯係我們的客服。",
       "recordedAt": "2026-08-10T03:05:46.573Z"
-    },
-    {
-      "key": "okx",
-      "name": "OKX",
-      "version": "6.182.0",
-      "releaseDate": "2026-07-29T02:28:18Z",
-      "releaseNotes": "我們優化了性能並修復了部分問題。\n立即更新 OKX App，讓您緊隨數字貨幣市場變幻，探索不一樣的 Web3 世界！\n\n歡迎大家提供意見指教。如果您有任何建議，可聯係我們的客服。",
-      "recordedAt": "2026-08-03T04:22:53.448Z"
     }
   ],
   "bybit": [
+    {
+      "key": "bybit",
+      "name": "Bybit",
+      "version": "5.26.5",
+      "releaseDate": "2026-10-09T03:09:58Z",
+      "releaseNotes": "此版本更新包括：\n\n1. 用戶界面煥新升級，整體操作體驗更加絲滑流暢。\n2. 修復功能問題，提升應用穩定性，進一步優化使用體驗。",
+      "recordedAt": "2026-10-12T06:43:20.707Z"
+    },
     {
       "key": "bybit",
       "name": "Bybit",
@@ -6255,17 +6268,17 @@ export const appHistory: AppHistory = {
       "releaseDate": "2026-07-11T04:02:06Z",
       "releaseNotes": "此版本更新包括：\n\n1. 用戶界面煥新升級，整體操作體驗更加絲滑流暢。\n2. 修復功能問題，提升應用穩定性，進一步優化使用體驗。",
       "recordedAt": "2026-07-13T04:23:51.900Z"
-    },
-    {
-      "key": "bybit",
-      "name": "Bybit",
-      "version": "5.20.5",
-      "releaseDate": "2026-06-27T10:55:23Z",
-      "releaseNotes": "此版本更新包括：\n\n1. 用戶界面煥新升級，整體操作體驗更加絲滑流暢。\n2. 修復功能問題，提升應用穩定性，進一步優化使用體驗。",
-      "recordedAt": "2026-06-30T08:45:53.260Z"
     }
   ],
   "bitget": [
+    {
+      "key": "bitget",
+      "name": "Bitget",
+      "version": "2.94.4",
+      "releaseDate": "2026-10-09T01:24:38Z",
+      "releaseNotes": "Bitget 全新版本來了，為您帶來更多實用功能：\n- 標的名稱顯示樣式優化，資訊辨識更清晰\n- UTA 帳戶升級流程優化，升級更順暢\n- 支援合約未平倉數據顯示，行情資訊更完整\n- 錯誤修復及其他改進，使用更穩定更可靠\n我們不斷優化體驗，立即升級 Bitget，開啟您的全新交易旅程",
+      "recordedAt": "2026-10-12T06:43:20.707Z"
+    },
     {
       "key": "bitget",
       "name": "Bitget",

@@ -3,6 +3,14 @@
     {
       "key": "binance",
       "name": "Binance（币安）",
+      "version": "3.22.0",
+      "releaseDate": "2026-10-12T03:37:14Z",
+      "releaseNotes": "- 我們已修復了漏洞並提升效能。敬請期待後續更新。",
+      "recordedAt": "2026-10-12T06:43:20.707Z"
+    },
+    {
+      "key": "binance",
+      "name": "Binance（币安）",
       "version": "3.21.4",
       "releaseDate": "2026-10-02T05:05:14Z",
       "releaseNotes": "- 股票 K 線圖支援劃線。\n- 劃線資料雲端儲存，多端同步。",
@@ -71,17 +79,17 @@
       "releaseDate": "2026-08-07T16:27:07Z",
       "releaseNotes": "修復了部分用戶反饋的問題，並優化產品體驗，請更新至最新版本以獲取更流暢的使用體驗。",
       "recordedAt": "2026-08-10T03:05:46.573Z"
-    },
-    {
-      "key": "binance",
-      "name": "Binance（币安）",
-      "version": "3.18.4",
-      "releaseDate": "2026-08-01T02:46:23Z",
-      "releaseNotes": "優化幣種 PNL 分享體驗",
-      "recordedAt": "2026-08-03T04:22:53.448Z"
     }
   ],
   "okx": [
+    {
+      "key": "okx",
+      "name": "OKX",
+      "version": "6.192.0",
+      "releaseDate": "2026-10-05T06:25:05Z",
+      "releaseNotes": "我們優化了性能並修復了部分問題。\n立即更新 OKX App，讓您緊隨數字貨幣市場變幻，探索不一樣的 Web3 世界！\n\n歡迎大家提供意見指教。如果您有任何建議，可聯係我們的客服。",
+      "recordedAt": "2026-10-12T06:43:20.707Z"
+    },
     {
       "key": "okx",
       "name": "OKX",
@@ -153,17 +161,17 @@
       "releaseDate": "2026-08-04T08:39:55Z",
       "releaseNotes": "我們優化了性能並修復了部分問題。\n立即更新 OKX App，讓您緊隨數字貨幣市場變幻，探索不一樣的 Web3 世界！\n\n歡迎大家提供意見指教。如果您有任何建議，可聯係我們的客服。",
       "recordedAt": "2026-08-10T03:05:46.573Z"
-    },
-    {
-      "key": "okx",
-      "name": "OKX",
-      "version": "6.182.0",
-      "releaseDate": "2026-07-29T02:28:18Z",
-      "releaseNotes": "我們優化了性能並修復了部分問題。\n立即更新 OKX App，讓您緊隨數字貨幣市場變幻，探索不一樣的 Web3 世界！\n\n歡迎大家提供意見指教。如果您有任何建議，可聯係我們的客服。",
-      "recordedAt": "2026-08-03T04:22:53.448Z"
     }
   ],
   "bybit": [
+    {
+      "key": "bybit",
+      "name": "Bybit",
+      "version": "5.26.5",
+      "releaseDate": "2026-10-09T03:09:58Z",
+      "releaseNotes": "此版本更新包括：\n\n1. 用戶界面煥新升級，整體操作體驗更加絲滑流暢。\n2. 修復功能問題，提升應用穩定性，進一步優化使用體驗。",
+      "recordedAt": "2026-10-12T06:43:20.707Z"
+    },
     {
       "key": "bybit",
       "name": "Bybit",
@@ -235,17 +243,17 @@
       "releaseDate": "2026-07-11T04:02:06Z",
       "releaseNotes": "此版本更新包括：\n\n1. 用戶界面煥新升級，整體操作體驗更加絲滑流暢。\n2. 修復功能問題，提升應用穩定性，進一步優化使用體驗。",
       "recordedAt": "2026-07-13T04:23:51.900Z"
-    },
-    {
-      "key": "bybit",
-      "name": "Bybit",
-      "version": "5.20.5",
-      "releaseDate": "2026-06-27T10:55:23Z",
-      "releaseNotes": "此版本更新包括：\n\n1. 用戶界面煥新升級，整體操作體驗更加絲滑流暢。\n2. 修復功能問題，提升應用穩定性，進一步優化使用體驗。",
-      "recordedAt": "2026-06-30T08:45:53.260Z"
     }
   ],
   "bitget": [
+    {
+      "key": "bitget",
+      "name": "Bitget",
+      "version": "2.94.4",
+      "releaseDate": "2026-10-09T01:24:38Z",
+      "releaseNotes": "Bitget 全新版本來了，為您帶來更多實用功能：\n- 標的名稱顯示樣式優化，資訊辨識更清晰\n- UTA 帳戶升級流程優化，升級更順暢\n- 支援合約未平倉數據顯示，行情資訊更完整\n- 錯誤修復及其他改進，使用更穩定更可靠\n我們不斷優化體驗，立即升級 Bitget，開啟您的全新交易旅程",
+      "recordedAt": "2026-10-12T06:43:20.707Z"
+    },
     {
       "key": "bitget",
       "name": "Bitget",
