@@ -1,6 +1,6 @@
 // 该文件由 scripts/embed-data.mjs 自动生成，请勿手动编辑。
 // 快照来源目录: /home/runner/work/Competitor-Code/Competitor-Code/data/snapshots
-// App 快照: 2026-10-12.json  |  交易对快照: pairs-2026-10-12.json
+// App 快照: 2026-10-12.json  |  交易对快照: pairs-2026-10-13.json
 import type { AppSnapshot, PairsSnapshot, AppHistory } from '@/types';
 
 export const appSnapshot: AppSnapshot | null = {
@@ -71,7 +71,7 @@ export const appSnapshot: AppSnapshot | null = {
 };
 
 export const pairsSnapshot: PairsSnapshot | null = {
-  "collectedAt": "2026-10-12T06:43:20.149Z",
+  "collectedAt": "2026-10-13T07:12:02.242Z",
   "pairFormat": "BASE/QUOTE",
   "exchanges": {
     "binance": {
@@ -2420,6 +2420,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "XAUT/TRY",
         "XAUT/USDT",
         "XAVGO/USDT",
+        "XBB/USDT",
         "XBE/USDT",
         "XBMNR/USDT",
         "XBOT/USDT",
@@ -2428,6 +2429,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "XBX/USDT",
         "XCBRS/USDC",
         "XCBRS/USDT",
+        "XCGNX/USDT",
         "XCH/EUR",
         "XCH/USDC",
         "XCH/USDT",
@@ -2453,6 +2455,8 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "XEWY/USDC",
         "XEWY/USDT",
         "XFLNC/USDT",
+        "XFLY/USDT",
+        "XFWDI/USDT",
         "XGEV/USDT",
         "XGLW/USDT",
         "XGME/USDT",
@@ -2464,9 +2468,11 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "XHOOD/USDT",
         "XHPE/USDT",
         "XIBM/USDT",
+        "XINFQ/USDT",
         "XINTC/USDC",
         "XINTC/USDT",
         "XINTW/USDT",
+        "XIONQ/USDT",
         "XIREN/USDT",
         "XISRG/USDT",
         "XIWM/USDT",
@@ -2482,6 +2488,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "XLM/USDC",
         "XLM/USDT",
         "XLRCX/USDT",
+        "XLUNR/USDT",
         "XMETA/USDC",
         "XMETA/USDT",
         "XMRVL/USDC",
@@ -2503,7 +2510,9 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "XON/USDT",
         "XONDS/USDT",
         "XORCL/USDT",
+        "XOSCR/USDT",
         "XOUST/USDT",
+        "XPENG/USDT",
         "XPL/EUR",
         "XPL/TRY",
         "XPL/USDC",
@@ -2612,7 +2621,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "ZRX/USDC",
         "ZRX/USDT"
       ],
-      "count": 1154,
+      "count": 1163,
       "error": null
     },
     "bybit": {
@@ -6010,12 +6019,19 @@ export const pairsSnapshot: PairsSnapshot | null = {
     }
   },
   "comparison": {
-    "previousSnapshot": "pairs-2026-10-11.json",
+    "previousSnapshot": "pairs-2026-10-12.json",
     "newPairs": {
       "binance": [],
       "okx": [
-        "XAMC/USDT",
-        "XQNT/USDT"
+        "XBB/USDT",
+        "XCGNX/USDT",
+        "XFLY/USDT",
+        "XFWDI/USDT",
+        "XINFQ/USDT",
+        "XIONQ/USDT",
+        "XLUNR/USDT",
+        "XOSCR/USDT",
+        "XPENG/USDT"
       ],
       "bybit": [],
       "bitget": []
