@@ -3,6 +3,14 @@
     {
       "key": "binance",
       "name": "Binance（币安）",
+      "version": "3.22.2",
+      "releaseDate": "2026-10-16T00:40:50Z",
+      "releaseNotes": "- 我們已修復了漏洞並提升效能。敬請期待後續更新。",
+      "recordedAt": "2026-10-19T05:27:00.482Z"
+    },
+    {
+      "key": "binance",
+      "name": "Binance（币安）",
       "version": "3.22.0",
       "releaseDate": "2026-10-12T03:37:14Z",
       "releaseNotes": "- 我們已修復了漏洞並提升效能。敬請期待後續更新。",
@@ -71,17 +79,17 @@
       "releaseDate": "2026-08-14T02:11:29Z",
       "releaseNotes": "修復了部分用戶反饋的問題，並優化產品體驗，請更新至最新版本以獲取更流暢的使用體驗。",
       "recordedAt": "2026-08-17T02:12:39.780Z"
-    },
-    {
-      "key": "binance",
-      "name": "Binance（币安）",
-      "version": "3.19.1",
-      "releaseDate": "2026-08-07T16:27:07Z",
-      "releaseNotes": "修復了部分用戶反饋的問題，並優化產品體驗，請更新至最新版本以獲取更流暢的使用體驗。",
-      "recordedAt": "2026-08-10T03:05:46.573Z"
     }
   ],
   "okx": [
+    {
+      "key": "okx",
+      "name": "OKX",
+      "version": "6.193.0",
+      "releaseDate": "2026-10-13T05:50:43Z",
+      "releaseNotes": "我們優化了性能並修復了部分問題。\n立即更新 OKX App，讓您緊隨數字貨幣市場變幻，探索不一樣的 Web3 世界！\n\n歡迎大家提供意見指教。如果您有任何建議，可聯係我們的客服。",
+      "recordedAt": "2026-10-19T05:27:00.482Z"
+    },
     {
       "key": "okx",
       "name": "OKX",
@@ -153,17 +161,17 @@
       "releaseDate": "2026-08-14T01:47:22Z",
       "releaseNotes": "我們優化了性能並修復了部分問題。\n立即更新 OKX App，讓您緊隨數字貨幣市場變幻，探索不一樣的 Web3 世界！\n\n歡迎大家提供意見指教。如果您有任何建議，可聯係我們的客服。",
       "recordedAt": "2026-08-17T02:12:39.780Z"
-    },
-    {
-      "key": "okx",
-      "name": "OKX",
-      "version": "6.183.1",
-      "releaseDate": "2026-08-04T08:39:55Z",
-      "releaseNotes": "我們優化了性能並修復了部分問題。\n立即更新 OKX App，讓您緊隨數字貨幣市場變幻，探索不一樣的 Web3 世界！\n\n歡迎大家提供意見指教。如果您有任何建議，可聯係我們的客服。",
-      "recordedAt": "2026-08-10T03:05:46.573Z"
     }
   ],
   "bybit": [
+    {
+      "key": "bybit",
+      "name": "Bybit",
+      "version": "5.27.0",
+      "releaseDate": "2026-10-16T06:59:28Z",
+      "releaseNotes": "1. 全新理財平台：全新 App 首頁。一個平台，盡享無限機遇。\n\n2. Bybit 股票：股票交易正式上線！打破加密貨幣局限，多元投資盡在掌握。",
+      "recordedAt": "2026-10-19T05:27:00.482Z"
+    },
     {
       "key": "bybit",
       "name": "Bybit",
@@ -235,14 +243,6 @@
       "releaseDate": "2026-07-30T07:30:16Z",
       "releaseNotes": "此版本更新包括：\n\n1. 用戶界面煥新升級，整體操作體驗更加絲滑流暢。\n2. 修復功能問題，提升應用穩定性，進一步優化使用體驗。",
       "recordedAt": "2026-08-03T04:22:53.448Z"
-    },
-    {
-      "key": "bybit",
-      "name": "Bybit",
-      "version": "5.21.0",
-      "releaseDate": "2026-07-11T04:02:06Z",
-      "releaseNotes": "此版本更新包括：\n\n1. 用戶界面煥新升級，整體操作體驗更加絲滑流暢。\n2. 修復功能問題，提升應用穩定性，進一步優化使用體驗。",
-      "recordedAt": "2026-07-13T04:23:51.900Z"
     }
   ],
   "bitget": [
