@@ -1,6 +1,6 @@
 // 该文件由 scripts/embed-data.mjs 自动生成，请勿手动编辑。
 // 快照来源目录: /home/runner/work/Competitor-Code/Competitor-Code/data/snapshots
-// App 快照: 2026-10-19.json  |  交易对快照: pairs-2026-10-21.json
+// App 快照: 2026-10-19.json  |  交易对快照: pairs-2026-10-22.json
 import type { AppSnapshot, PairsSnapshot, AppHistory } from '@/types';
 
 export const appSnapshot: AppSnapshot | null = {
@@ -71,7 +71,7 @@ export const appSnapshot: AppSnapshot | null = {
 };
 
 export const pairsSnapshot: PairsSnapshot | null = {
-  "collectedAt": "2026-10-21T05:30:36.013Z",
+  "collectedAt": "2026-10-22T05:34:20.720Z",
   "pairFormat": "BASE/QUOTE",
   "exchanges": {
     "binance": {
@@ -330,8 +330,10 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "BONK/TRY",
         "BONK/USDC",
         "BONK/USDT",
+        "BOTB/USDT",
         "BREV/TRY",
         "BREV/USDT",
+        "BRKBB/USDT",
         "BROCCOLI714/USDC",
         "BROCCOLI714/USDT",
         "BTC/ARS",
@@ -341,6 +343,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "BTC/IDR",
         "BTC/JPY",
         "BTC/MXN",
+        "BTC/THB",
         "BTC/TRY",
         "BTC/U",
         "BTC/USD",
@@ -724,6 +727,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "KORUB/USDT",
         "KSM/TRY",
         "KSM/USDT",
+        "KSTRB/USDT",
         "LA/TRY",
         "LA/USDT",
         "LAYER/TRY",
@@ -1222,6 +1226,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "TLM/TRY",
         "TLM/USDC",
         "TLM/USDT",
+        "TMFB/USDT",
         "TNSR/TRY",
         "TNSR/USDT",
         "TOWNS/TRY",
@@ -1306,6 +1311,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "USDT/IDR",
         "USDT/KZT",
         "USDT/MXN",
+        "USDT/THB",
         "USDT/TRY",
         "USDT/USD",
         "USDT/ZAR",
@@ -1326,6 +1332,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "VIRTUAL/TRY",
         "VIRTUAL/USDC",
         "VIRTUAL/USDT",
+        "VSTB/USDT",
         "VTHO/USDT",
         "W/TRY",
         "W/USDC",
@@ -1457,7 +1464,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "牛来/USDC",
         "牛来/USDT"
       ],
-      "count": 1380,
+      "count": 1387,
       "error": null
     },
     "okx": {
@@ -2573,8 +2580,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "XSQQQ/USDT",
         "XSTRC/USDT",
         "XTER/USDT",
-        "XTESTA/USDC",
-        "XTESTA/USDT",
         "XTMF/USDT",
         "XTQQQ/USDT",
         "XTSEM/USDT",
@@ -2648,7 +2653,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "ZRX/USDC",
         "ZRX/USDT"
       ],
-      "count": 1185,
+      "count": 1183,
       "error": null
     },
     "bybit": {
@@ -2717,6 +2722,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "AVNT/USDT",
         "AVV/USDT",
         "AWE/USDT",
+        "AXIS/USDT",
         "AXL/USDT",
         "AXS/USDT",
         "B/USDT",
@@ -5633,6 +5639,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "rTBN/USDT",
         "rTCBI/USDT",
         "rTCBK/USDT",
+        "rTCEHY/USDT",
         "rTCOM/USDT",
         "rTD/USDT",
         "rTDC/USDT",
@@ -6247,19 +6254,28 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "ZRX/USDT",
         "ZTC/USDT"
       ],
-      "count": 3588,
+      "count": 3590,
       "error": null
     }
   },
   "comparison": {
-    "previousSnapshot": "pairs-2026-10-20.json",
+    "previousSnapshot": "pairs-2026-10-21.json",
     "newPairs": {
-      "binance": [],
-      "okx": [
-        "XNFLX/USDC"
+      "binance": [
+        "BOTB/USDT",
+        "BRKBB/USDT",
+        "BTC/THB",
+        "KSTRB/USDT",
+        "TMFB/USDT",
+        "USDT/THB",
+        "VSTB/USDT"
       ],
+      "okx": [],
       "bybit": [],
-      "bitget": []
+      "bitget": [
+        "AXIS/USDT",
+        "rTCEHY/USDT"
+      ]
     }
   }
 };
