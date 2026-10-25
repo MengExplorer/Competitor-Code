@@ -1,6 +1,6 @@
 // 该文件由 scripts/embed-data.mjs 自动生成，请勿手动编辑。
 // 快照来源目录: /home/runner/work/Competitor-Code/Competitor-Code/data/snapshots
-// App 快照: 2026-10-19.json  |  交易对快照: pairs-2026-10-24.json
+// App 快照: 2026-10-19.json  |  交易对快照: pairs-2026-10-25.json
 import type { AppSnapshot, PairsSnapshot, AppHistory } from '@/types';
 
 export const appSnapshot: AppSnapshot | null = {
@@ -71,7 +71,7 @@ export const appSnapshot: AppSnapshot | null = {
 };
 
 export const pairsSnapshot: PairsSnapshot | null = {
-  "collectedAt": "2026-10-24T05:11:44.524Z",
+  "collectedAt": "2026-10-25T05:28:14.415Z",
   "pairFormat": "BASE/QUOTE",
   "exchanges": {
     "binance": {
@@ -6263,28 +6263,12 @@ export const pairsSnapshot: PairsSnapshot | null = {
     }
   },
   "comparison": {
-    "previousSnapshot": "pairs-2026-10-23.json",
+    "previousSnapshot": "pairs-2026-10-24.json",
     "newPairs": {
       "binance": [],
-      "okx": [
-        "TEST002/USDT",
-        "XACN/USDT",
-        "XAXTI/USDT",
-        "XCOST/USDT",
-        "XDDOG/USDT",
-        "XGS/USDT",
-        "XGTLB/USDT",
-        "XHUT/USDT",
-        "XJPM/USDT",
-        "XTESTA/USDC",
-        "XTESTA/USDT"
-      ],
+      "okx": [],
       "bybit": [],
-      "bitget": [
-        "CUDIS/USDT",
-        "rLU/USDT",
-        "RLUSD/USDC"
-      ]
+      "bitget": []
     }
   }
 };
