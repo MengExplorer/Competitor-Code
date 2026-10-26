@@ -1,0 +1,66 @@
+{
+  "collectedAt": "2026-10-26T05:33:23.508Z",
+  "storeCountry": "hk",
+  "apps": [
+    {
+      "key": "binance",
+      "name": "Binance（币安）",
+      "trackId": 1436799971,
+      "bundleId": "com.czzhao.binance",
+      "trackName": "幣安 - 買比特幣，就用全球第一投資理財首選加密貨幣交易所",
+      "sellerName": "Binance Switzerland AG",
+      "version": "3.22.5",
+      "releaseDate": "2026-10-23T01:09:34Z",
+      "releaseNotes": "- 我們已修復了漏洞並提升效能。敬請期待後續更新。",
+      "trackViewUrl": "https://apps.apple.com/hk/app/%E5%B9%A3%E5%AE%89-%E8%B2%B7%E6%AF%94%E7%89%B9%E5%B9%A3-%E5%B0%B1%E7%94%A8%E5%85%A8%E7%90%83%E7%AC%AC%E4%B8%80%E6%8A%95%E8%B3%87%E7%90%86%E8%B2%A1%E9%A6%96%E9%81%B8%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3%E4%BA%A4%E6%98%93%E6%89%80/id1436799971?uo=4",
+      "versionChanged": true,
+      "previousVersion": "3.22.2",
+      "error": null
+    },
+    {
+      "key": "okx",
+      "name": "OKX",
+      "trackId": 1327268470,
+      "bundleId": "com.okex.OKExAppstoreFull",
+      "trackName": "OKX — 全球千萬用戶的加密資產交易首選",
+      "sellerName": "OKX Inc.",
+      "version": "6.194.2",
+      "releaseDate": "2026-10-26T01:24:46Z",
+      "releaseNotes": "OKX 全新推出 Solana 的流動性質押代幣 OKSOL。 您可按 1:1 的比例質押 SOL 換取 OKSOL，輕鬆賺取獎勵並保持流動性。您也可在現貨市場交易 OKSOL。\n\n感謝您使用 OKX！如有任何建議，可聯繫我們的客服。我們期待您的反饋！",
+      "trackViewUrl": "https://apps.apple.com/hk/app/okx-%E5%85%A8%E7%90%83%E5%8D%83%E8%90%AC%E7%94%A8%E6%88%B6%E7%9A%84%E5%8A%A0%E5%AF%86%E8%B3%87%E7%94%A2%E4%BA%A4%E6%98%93%E9%A6%96%E9%81%B8/id1327268470?uo=4",
+      "versionChanged": true,
+      "previousVersion": "6.193.0",
+      "error": null
+    },
+    {
+      "key": "bybit",
+      "name": "Bybit",
+      "trackId": 1488296980,
+      "bundleId": "com.bybit.app",
+      "trackName": "Bybit：交易加密貨幣與股票",
+      "sellerName": "Bybit Fintech Limited",
+      "version": "5.27.5",
+      "releaseDate": "2026-10-22T06:21:48Z",
+      "releaseNotes": "1. 全新理財平台：全新 App 首頁。一個平台，盡享無限機遇。\n\n2. Bybit 股票：股票交易正式上線！打破加密貨幣局限，多元投資盡在掌握。",
+      "trackViewUrl": "https://apps.apple.com/hk/app/bybit-%E4%BA%A4%E6%98%93%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3%E8%88%87%E8%82%A1%E7%A5%A8/id1488296980?uo=4",
+      "versionChanged": true,
+      "previousVersion": "5.27.0",
+      "error": null
+    },
+    {
+      "key": "bitget",
+      "name": "Bitget",
+      "trackId": 1442778704,
+      "bundleId": "com.bitget.exchange.global",
+      "trackName": "Bitget-比特幣、以太幣加密貨幣交易所",
+      "sellerName": "BG LIMITED",
+      "version": "2.95.0",
+      "releaseDate": "2026-10-21T23:48:33Z",
+      "releaseNotes": "Bitget 全新版本來了，為您帶來更多實用功能：\n- UTA 帳戶資產模組全新改版，資產狀況一目了然\n- UTA 帳戶現貨、合約支援分段訂單，下單更靈活\n- 現貨定投支援更多 rToken，定投選擇更豐富\n- 合約平倉功能優化，操作更加安全便利\n- 錯誤修復及其他改進，使用更穩定更可靠\n我們不斷優化體驗，立即升級 Bitget，開啟您的全新交易旅程",
+      "trackViewUrl": "https://apps.apple.com/hk/app/bitget-%E6%AF%94%E7%89%B9%E5%B9%A3-%E4%BB%A5%E5%A4%AA%E5%B9%A3%E5%8A%A0%E5%AF%86%E8%B2%A8%E5%B9%A3%E4%BA%A4%E6%98%93%E6%89%80/id1442778704?uo=4",
+      "versionChanged": true,
+      "previousVersion": "2.94.4",
+      "error": null
+    }
+  ]
+}
