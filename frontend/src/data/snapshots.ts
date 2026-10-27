@@ -1,6 +1,6 @@
 // 该文件由 scripts/embed-data.mjs 自动生成，请勿手动编辑。
 // 快照来源目录: /home/runner/work/Competitor-Code/Competitor-Code/data/snapshots
-// App 快照: 2026-10-26.json  |  交易对快照: pairs-2026-10-26.json
+// App 快照: 2026-10-26.json  |  交易对快照: pairs-2026-10-27.json
 import type { AppSnapshot, PairsSnapshot, AppHistory } from '@/types';
 
 export const appSnapshot: AppSnapshot | null = {
@@ -71,7 +71,7 @@ export const appSnapshot: AppSnapshot | null = {
 };
 
 export const pairsSnapshot: PairsSnapshot | null = {
-  "collectedAt": "2026-10-26T05:33:22.587Z",
+  "collectedAt": "2026-10-27T05:47:11.920Z",
   "pairFormat": "BASE/QUOTE",
   "exchanges": {
     "binance": {
@@ -2510,8 +2510,12 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "XLRCX/USDT",
         "XLUNR/USDT",
         "XLYTE/USDT",
+        "XMARA/USDT",
+        "XMCD/USDT",
         "XMETA/USDC",
         "XMETA/USDT",
+        "XMRK/USDT",
+        "XMRNA/USDT",
         "XMRVL/USDC",
         "XMRVL/USDT",
         "XMSFT/USDT",
@@ -2523,11 +2527,14 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "XMVLL/USDT",
         "XNBIS/USDC",
         "XNBIS/USDT",
+        "XNET/USDT",
         "XNFLX/USDC",
         "XNFLX/USDT",
+        "XNKE/USDT",
         "XNOW/USDT",
         "XNVDA/USDC",
         "XNVDA/USDT",
+        "XOKLO/USDT",
         "XOKTA/USDT",
         "XON/USDT",
         "XONDS/USDT",
@@ -2543,6 +2550,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "XPOET/USDT",
         "XPOPMART/USDT",
         "XPURR/USDT",
+        "XPYPL/USDT",
         "XQCOM/USDT",
         "XQNT/USDT",
         "XQQQ/USDC",
@@ -2661,7 +2669,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "ZRX/USDC",
         "ZRX/USDT"
       ],
-      "count": 1195,
+      "count": 1203,
       "error": null
     },
     "bybit": {
@@ -2696,7 +2704,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "AIAV/USDT",
         "AIN/USDT",
         "AIO/USDT",
-        "AL/USDT",
         "ALGO/USDT",
         "ALICE/USDT",
         "ALIGN/USDT",
@@ -3713,7 +3720,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "rCRM/USDT",
         "rCRON/USDT",
         "rCROX/USDT",
-        "rCRPJY/USDT",
         "rCRS/USDT",
         "rCRSP/USDT",
         "rCRSR/USDT",
@@ -6257,15 +6263,24 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "ZRX/USDT",
         "ZTC/USDT"
       ],
-      "count": 3585,
+      "count": 3583,
       "error": null
     }
   },
   "comparison": {
-    "previousSnapshot": "pairs-2026-10-25.json",
+    "previousSnapshot": "pairs-2026-10-26.json",
     "newPairs": {
       "binance": [],
-      "okx": [],
+      "okx": [
+        "XMARA/USDT",
+        "XMCD/USDT",
+        "XMRK/USDT",
+        "XMRNA/USDT",
+        "XNET/USDT",
+        "XNKE/USDT",
+        "XOKLO/USDT",
+        "XPYPL/USDT"
+      ],
       "bybit": [],
       "bitget": []
     }
