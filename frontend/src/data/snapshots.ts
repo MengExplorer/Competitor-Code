@@ -1,6 +1,6 @@
 // 该文件由 scripts/embed-data.mjs 自动生成，请勿手动编辑。
 // 快照来源目录: /home/runner/work/Competitor-Code/Competitor-Code/data/snapshots
-// App 快照: 2026-10-26.json  |  交易对快照: pairs-2026-10-28.json
+// App 快照: 2026-10-26.json  |  交易对快照: pairs-2026-10-29.json
 import type { AppSnapshot, PairsSnapshot, AppHistory } from '@/types';
 
 export const appSnapshot: AppSnapshot | null = {
@@ -71,7 +71,7 @@ export const appSnapshot: AppSnapshot | null = {
 };
 
 export const pairsSnapshot: PairsSnapshot | null = {
-  "collectedAt": "2026-10-28T06:25:44.120Z",
+  "collectedAt": "2026-10-29T06:36:16.096Z",
   "pairFormat": "BASE/QUOTE",
   "exchanges": {
     "binance": {
@@ -175,6 +175,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "API3/TRY",
         "API3/USDC",
         "API3/USDT",
+        "APPB/USDT",
         "APT/EUR",
         "APT/FDUSD",
         "APT/JPY",
@@ -335,6 +336,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "BRKBB/USDT",
         "BROCCOLI714/USDC",
         "BROCCOLI714/USDT",
+        "BSPB/USDT",
         "BTC/ARS",
         "BTC/BRL",
         "BTC/EUR",
@@ -580,6 +582,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "GENIUS/TRY",
         "GENIUS/USDC",
         "GENIUS/USDT",
+        "GEVB/USDT",
         "GIGGLE/JPY",
         "GIGGLE/TRY",
         "GIGGLE/U",
@@ -1104,9 +1107,11 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "SIGN/TRY",
         "SIGN/USDC",
         "SIGN/USDT",
+        "SKDDB/USDT",
         "SKHYB/USDT",
         "SKL/TRY",
         "SKL/USDT",
+        "SKUUB/USDT",
         "SKY/TRY",
         "SKY/USDC",
         "SKY/USDT",
@@ -1457,7 +1462,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "牛来/USDC",
         "牛来/USDT"
       ],
-      "count": 1380,
+      "count": 1385,
       "error": null
     },
     "okx": {
@@ -6276,27 +6281,18 @@ export const pairsSnapshot: PairsSnapshot | null = {
     }
   },
   "comparison": {
-    "previousSnapshot": "pairs-2026-10-27.json",
+    "previousSnapshot": "pairs-2026-10-28.json",
     "newPairs": {
-      "binance": [],
-      "okx": [
-        "XRIOT/USDT",
-        "XSOFI/USDT",
-        "XTEAM/USDT",
-        "XTEM/USDT",
-        "XTXN/USDT",
-        "XV/USDT",
-        "XVICR/USDT",
-        "XWMT/USDT",
-        "XXOM/USDT"
+      "binance": [
+        "APPB/USDT",
+        "BSPB/USDT",
+        "GEVB/USDT",
+        "SKDDB/USDT",
+        "SKUUB/USDT"
       ],
+      "okx": [],
       "bybit": [],
-      "bitget": [
-        "rAURE/USDT",
-        "rBUUU/USDT",
-        "rMSGK/USDT",
-        "XRP/RLUSD"
-      ]
+      "bitget": []
     }
   }
 };
