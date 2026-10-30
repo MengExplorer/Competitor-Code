@@ -1,6 +1,6 @@
 // 该文件由 scripts/embed-data.mjs 自动生成，请勿手动编辑。
 // 快照来源目录: /home/runner/work/Competitor-Code/Competitor-Code/data/snapshots
-// App 快照: 2026-10-26.json  |  交易对快照: pairs-2026-10-29.json
+// App 快照: 2026-10-26.json  |  交易对快照: pairs-2026-10-30.json
 import type { AppSnapshot, PairsSnapshot, AppHistory } from '@/types';
 
 export const appSnapshot: AppSnapshot | null = {
@@ -71,7 +71,7 @@ export const appSnapshot: AppSnapshot | null = {
 };
 
 export const pairsSnapshot: PairsSnapshot | null = {
-  "collectedAt": "2026-10-29T06:36:16.096Z",
+  "collectedAt": "2026-10-30T06:36:25.365Z",
   "pairFormat": "BASE/QUOTE",
   "exchanges": {
     "binance": {
@@ -99,7 +99,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "A/USDT",
         "AAOIB/USDT",
         "AAPLB/USDT",
-        "AAVE/BTC",
         "AAVE/ETH",
         "AAVE/TRY",
         "AAVE/U",
@@ -218,7 +217,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "AT/USDT",
         "ATM/TRY",
         "ATM/USDT",
-        "ATOM/BTC",
         "ATOM/EUR",
         "ATOM/TRY",
         "ATOM/USDC",
@@ -358,7 +356,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "C/USDT",
         "C98/USDT",
         "CAKE/BNB",
-        "CAKE/BTC",
         "CAKE/TRY",
         "CAKE/USDC",
         "CAKE/USDT",
@@ -422,7 +419,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "CYBER/TRY",
         "CYBER/USDT",
         "CYPHB/USDT",
-        "DASH/BTC",
         "DASH/TRY",
         "DASH/USDC",
         "DASH/USDT",
@@ -500,7 +496,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "ESP/TRY",
         "ESP/USDC",
         "ESP/USDT",
-        "ETC/BTC",
         "ETC/FDUSD",
         "ETC/TRY",
         "ETC/USDC",
@@ -658,7 +653,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "HYPER/USDC",
         "HYPER/USDT",
         "IBMB/USDT",
-        "ICP/BTC",
         "ICP/EUR",
         "ICP/TRY",
         "ICP/USDC",
@@ -936,7 +930,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "PAXG/USDC",
         "PAXG/USDT",
         "PDDB/USDT",
-        "PENDLE/BTC",
         "PENDLE/TRY",
         "PENDLE/USDC",
         "PENDLE/USDT",
@@ -1027,7 +1020,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "RED/USDC",
         "RED/USDT",
         "RENDER/BRL",
-        "RENDER/BTC",
         "RENDER/EUR",
         "RENDER/IDR",
         "RENDER/TRY",
@@ -1200,7 +1192,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "SYRUP/USDC",
         "SYRUP/USDT",
         "T/USDT",
-        "TAO/BTC",
         "TAO/FDUSD",
         "TAO/IDR",
         "TAO/JPY",
@@ -1213,7 +1204,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "THE/TRY",
         "THE/USDC",
         "THE/USDT",
-        "THETA/BTC",
         "THETA/TRY",
         "THETA/USDC",
         "THETA/USDT",
@@ -1372,7 +1362,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "WOO/USDT",
         "XAI/TRY",
         "XAI/USDT",
-        "XAUT/BTC",
         "XAUT/TRY",
         "XAUT/U",
         "XAUT/USD1",
@@ -1408,7 +1397,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "XRP/USD1",
         "XRP/USDC",
         "XRP/USDT",
-        "XTZ/BTC",
         "XTZ/TRY",
         "XTZ/USDC",
         "XTZ/USDT",
@@ -1462,7 +1450,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "牛来/USDC",
         "牛来/USDT"
       ],
-      "count": 1385,
+      "count": 1373,
       "error": null
     },
     "okx": {
@@ -1672,6 +1660,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "CELR/EUR",
         "CELR/USDC",
         "CELR/USDT",
+        "CETUS/EUR",
         "CETUS/USDC",
         "CETUS/USDT",
         "CFG/EUR",
@@ -2349,6 +2338,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "UNI/USDT",
         "USAT/USDT",
         "USD1/USDT",
+        "USDC/AED",
         "USDC/AUD",
         "USDC/BRL",
         "USDC/EUR",
@@ -2371,8 +2361,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "VELO/EUR",
         "VELO/USDC",
         "VELO/USDT",
-        "VELODROME/EUR",
-        "VELODROME/USDC",
         "VELODROME/USDT",
         "VINE/USDT",
         "VIRTUAL/EUR",
@@ -6281,16 +6269,13 @@ export const pairsSnapshot: PairsSnapshot | null = {
     }
   },
   "comparison": {
-    "previousSnapshot": "pairs-2026-10-28.json",
+    "previousSnapshot": "pairs-2026-10-29.json",
     "newPairs": {
-      "binance": [
-        "APPB/USDT",
-        "BSPB/USDT",
-        "GEVB/USDT",
-        "SKDDB/USDT",
-        "SKUUB/USDT"
+      "binance": [],
+      "okx": [
+        "CETUS/EUR",
+        "USDC/AED"
       ],
-      "okx": [],
       "bybit": [],
       "bitget": []
     }
