@@ -1,6 +1,6 @@
 // 该文件由 scripts/embed-data.mjs 自动生成，请勿手动编辑。
 // 快照来源目录: /home/runner/work/Competitor-Code/Competitor-Code/data/snapshots
-// App 快照: 2026-10-26.json  |  交易对快照: pairs-2026-10-30.json
+// App 快照: 2026-10-26.json  |  交易对快照: pairs-2026-10-31.json
 import type { AppSnapshot, PairsSnapshot, AppHistory } from '@/types';
 
 export const appSnapshot: AppSnapshot | null = {
@@ -71,7 +71,7 @@ export const appSnapshot: AppSnapshot | null = {
 };
 
 export const pairsSnapshot: PairsSnapshot | null = {
-  "collectedAt": "2026-10-30T06:36:25.365Z",
+  "collectedAt": "2026-10-31T06:25:43.018Z",
   "pairFormat": "BASE/QUOTE",
   "exchanges": {
     "binance": {
@@ -2898,7 +2898,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "H/USDT",
         "HAEDAL/USDT",
         "HBAR/USDT",
-        "HEI/USDT",
         "HIVE/USDT",
         "HMSTR/USDT",
         "HNT/USDT",
@@ -2990,7 +2989,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "MOEW/USDT",
         "MOG/USDT",
         "MON/USDT",
-        "MOODENG/USDT",
         "MORPHO/USDT",
         "MOVE/USDT",
         "MOVR/USDT",
@@ -6252,7 +6250,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "ZBT/USDT",
         "ZEC/USDT",
         "ZEN/USDT",
-        "ZENT/USDT",
         "ZETA/USDT",
         "ZIG/USDT",
         "ZIL/USDT",
@@ -6264,18 +6261,15 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "ZRX/USDT",
         "ZTC/USDT"
       ],
-      "count": 3586,
+      "count": 3583,
       "error": null
     }
   },
   "comparison": {
-    "previousSnapshot": "pairs-2026-10-29.json",
+    "previousSnapshot": "pairs-2026-10-30.json",
     "newPairs": {
       "binance": [],
-      "okx": [
-        "CETUS/EUR",
-        "USDC/AED"
-      ],
+      "okx": [],
       "bybit": [],
       "bitget": []
     }
