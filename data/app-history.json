@@ -3,6 +3,14 @@
     {
       "key": "binance",
       "name": "Binance（币安）",
+      "version": "3.23.1",
+      "releaseDate": "2026-10-30T17:45:00Z",
+      "releaseNotes": "- 優化提幣手續費扣款的提示。\n- 小額兌換功能支援在資產總覽中一鍵兌換全部帳戶資產。",
+      "recordedAt": "2026-11-02T06:57:54.428Z"
+    },
+    {
+      "key": "binance",
+      "name": "Binance（币安）",
       "version": "3.22.5",
       "releaseDate": "2026-10-23T01:09:34Z",
       "releaseNotes": "- 我們已修復了漏洞並提升效能。敬請期待後續更新。",
@@ -71,17 +79,17 @@
       "releaseDate": "2026-08-28T02:25:40Z",
       "releaseNotes": "修復了部分用戶反饋的問題，並優化產品體驗，請更新至最新版本以獲取更流暢的使用體驗。",
       "recordedAt": "2026-08-31T06:22:29.618Z"
-    },
-    {
-      "key": "binance",
-      "name": "Binance（币安）",
-      "version": "3.19.4",
-      "releaseDate": "2026-08-21T15:10:18Z",
-      "releaseNotes": "修復了部分用戶反饋的問題，並優化產品體驗，請更新至最新版本以獲取更流暢的使用體驗。",
-      "recordedAt": "2026-08-24T02:15:49.551Z"
     }
   ],
   "okx": [
+    {
+      "key": "okx",
+      "name": "OKX",
+      "version": "6.195.0",
+      "releaseDate": "2026-10-26T08:37:22Z",
+      "releaseNotes": "我們優化了性能並修復了部分問題。\n立即更新 OKX App，讓您緊隨數字貨幣市場變幻，探索不一樣的 Web3 世界！\n\n歡迎大家提供意見指教。如果您有任何建議，可聯係我們的客服。",
+      "recordedAt": "2026-11-02T06:57:54.428Z"
+    },
     {
       "key": "okx",
       "name": "OKX",
@@ -153,17 +161,17 @@
       "releaseDate": "2026-08-27T02:30:04Z",
       "releaseNotes": "我們優化了性能並修復了部分問題。\n立即更新 OKX App，讓您緊隨數字貨幣市場變幻，探索不一樣的 Web3 世界！\n\n歡迎大家提供意見指教。如果您有任何建議，可聯係我們的客服。",
       "recordedAt": "2026-08-31T06:22:29.618Z"
-    },
-    {
-      "key": "okx",
-      "name": "OKX",
-      "version": "6.185.0",
-      "releaseDate": "2026-08-20T02:25:01Z",
-      "releaseNotes": "我們優化了性能並修復了部分問題。\n立即更新 OKX App，讓您緊隨數字貨幣市場變幻，探索不一樣的 Web3 世界！\n\n歡迎大家提供意見指教。如果您有任何建議，可聯係我們的客服。",
-      "recordedAt": "2026-08-24T02:15:49.551Z"
     }
   ],
   "bybit": [
+    {
+      "key": "bybit",
+      "name": "Bybit",
+      "version": "5.28.0",
+      "releaseDate": "2026-10-29T06:30:49Z",
+      "releaseNotes": "Bybit ：集加密貨幣、股票、合約及多資產交易於一身的全新金融平台。\n\n我們優化了 Bybit 現貨、Bybit 理財、Bybit P2P 等功能的使用體驗，加載速度更快，切換更流暢。",
+      "recordedAt": "2026-11-02T06:57:54.428Z"
+    },
     {
       "key": "bybit",
       "name": "Bybit",
@@ -235,14 +243,6 @@
       "releaseDate": "2026-08-16T11:52:22Z",
       "releaseNotes": "此版本更新包括：\n\n1. 用戶界面煥新升級，整體操作體驗更加絲滑流暢。\n2. 修復功能問題，提升應用穩定性，進一步優化使用體驗。",
       "recordedAt": "2026-08-17T02:12:39.780Z"
-    },
-    {
-      "key": "bybit",
-      "name": "Bybit",
-      "version": "5.22.6",
-      "releaseDate": "2026-08-05T02:33:56Z",
-      "releaseNotes": "此版本更新包括：\n\n1. 用戶界面煥新升級，整體操作體驗更加絲滑流暢。\n2. 修復功能問題，提升應用穩定性，進一步優化使用體驗。",
-      "recordedAt": "2026-08-10T03:05:46.573Z"
     }
   ],
   "bitget": [
