@@ -1,6 +1,6 @@
 // 该文件由 scripts/embed-data.mjs 自动生成，请勿手动编辑。
 // 快照来源目录: /home/runner/work/Competitor-Code/Competitor-Code/data/snapshots
-// App 快照: 2026-11-02.json  |  交易对快照: pairs-2026-11-02.json
+// App 快照: 2026-11-02.json  |  交易对快照: pairs-2026-11-03.json
 import type { AppSnapshot, PairsSnapshot, AppHistory } from '@/types';
 
 export const appSnapshot: AppSnapshot | null = {
@@ -71,7 +71,7 @@ export const appSnapshot: AppSnapshot | null = {
 };
 
 export const pairsSnapshot: PairsSnapshot | null = {
-  "collectedAt": "2026-11-02T06:57:53.907Z",
+  "collectedAt": "2026-11-03T07:21:52.495Z",
   "pairFormat": "BASE/QUOTE",
   "exchanges": {
     "binance": {
@@ -1312,7 +1312,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "UVXYB/USDT",
         "VANA/TRY",
         "VANA/USDT",
-        "VELODROME/USDT",
         "VET/EUR",
         "VET/TRY",
         "VET/USDC",
@@ -1450,7 +1449,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "牛来/USDC",
         "牛来/USDT"
       ],
-      "count": 1373,
+      "count": 1372,
       "error": null
     },
     "okx": {
@@ -2361,7 +2360,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "VELO/EUR",
         "VELO/USDC",
         "VELO/USDT",
-        "VELODROME/USDT",
         "VINE/USDT",
         "VIRTUAL/EUR",
         "VIRTUAL/USDC",
@@ -2667,7 +2665,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "ZRX/USDC",
         "ZRX/USDT"
       ],
-      "count": 1211,
+      "count": 1210,
       "error": null
     },
     "bybit": {
@@ -6266,7 +6264,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
     }
   },
   "comparison": {
-    "previousSnapshot": "pairs-2026-11-01.json",
+    "previousSnapshot": "pairs-2026-11-02.json",
     "newPairs": {
       "binance": [],
       "okx": [],
