@@ -1,6 +1,6 @@
 // 该文件由 scripts/embed-data.mjs 自动生成，请勿手动编辑。
 // 快照来源目录: /home/runner/work/Competitor-Code/Competitor-Code/data/snapshots
-// App 快照: 2026-11-02.json  |  交易对快照: pairs-2026-11-05.json
+// App 快照: 2026-11-02.json  |  交易对快照: pairs-2026-11-06.json
 import type { AppSnapshot, PairsSnapshot, AppHistory } from '@/types';
 
 export const appSnapshot: AppSnapshot | null = {
@@ -71,7 +71,7 @@ export const appSnapshot: AppSnapshot | null = {
 };
 
 export const pairsSnapshot: PairsSnapshot | null = {
-  "collectedAt": "2026-11-05T07:30:44.083Z",
+  "collectedAt": "2026-11-06T07:28:58.188Z",
   "pairFormat": "BASE/QUOTE",
   "exchanges": {
     "binance": {
@@ -3924,6 +3924,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "rEFC/USDT",
         "rEFOR/USDT",
         "rEFSC/USDT",
+        "rEFV/USDT",
         "rEFX/USDT",
         "rEFXT/USDT",
         "rEG/USDT",
@@ -4492,6 +4493,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "rIRTC/USDT",
         "rISRG/USDT",
         "rIT/USDT",
+        "rITA/USDT",
         "rITB/USDT",
         "rITG/USDT",
         "rITGR/USDT",
@@ -4891,6 +4893,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "rMTN/USDT",
         "rMTRN/USDT",
         "rMTSI/USDT",
+        "rMTUM/USDT",
         "rMTX/USDT",
         "rMTZ/USDT",
         "rMU/USDT",
@@ -5303,6 +5306,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "rQS/USDT",
         "rQSR/USDT",
         "rQTWO/USDT",
+        "rQUAL/USDT",
         "rQUBT/USDT",
         "rQURE/USDT",
         "rQXO/USDT",
@@ -5583,6 +5587,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "rSOXL/USDT",
         "rSOXQ/USDT",
         "rSOXS/USDT",
+        "rSOXX/USDT",
         "rSPB/USDT",
         "rSPCE/USDT",
         "rSPCH/USDT",
@@ -6336,21 +6341,22 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "ZRX/USDT",
         "ZTC/USDT"
       ],
-      "count": 3660,
+      "count": 3665,
       "error": null
     }
   },
   "comparison": {
-    "previousSnapshot": "pairs-2026-11-04.json",
+    "previousSnapshot": "pairs-2026-11-05.json",
     "newPairs": {
       "binance": [],
-      "okx": [
-        "XASML/USDC",
-        "XIREN/USDC"
-      ],
+      "okx": [],
       "bybit": [],
       "bitget": [
-        "KOR/USDT"
+        "rEFV/USDT",
+        "rITA/USDT",
+        "rMTUM/USDT",
+        "rQUAL/USDT",
+        "rSOXX/USDT"
       ]
     }
   }
