@@ -1,6 +1,6 @@
 // 该文件由 scripts/embed-data.mjs 自动生成，请勿手动编辑。
 // 快照来源目录: /home/runner/work/Competitor-Code/Competitor-Code/data/snapshots
-// App 快照: 2026-11-02.json  |  交易对快照: pairs-2026-11-06.json
+// App 快照: 2026-11-02.json  |  交易对快照: pairs-2026-11-07.json
 import type { AppSnapshot, PairsSnapshot, AppHistory } from '@/types';
 
 export const appSnapshot: AppSnapshot | null = {
@@ -71,7 +71,7 @@ export const appSnapshot: AppSnapshot | null = {
 };
 
 export const pairsSnapshot: PairsSnapshot | null = {
-  "collectedAt": "2026-11-06T07:28:58.188Z",
+  "collectedAt": "2026-11-07T06:41:44.100Z",
   "pairFormat": "BASE/QUOTE",
   "exchanges": {
     "binance": {
@@ -2776,7 +2776,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "BOME/USDT",
         "BONK/USDT",
         "BR/USDT",
-        "BRETT/USDT",
         "BREV/USDT",
         "BSB/USDT",
         "BSV/USDT",
@@ -2801,7 +2800,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "CGN/USDT",
         "CGPT/USDT",
         "CHEEMS/USDT",
-        "CHILLGUY/USDT",
         "CHR/USDT",
         "CHZ/USDT",
         "CKB/USDT",
@@ -2869,7 +2867,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "FIL/USDT",
         "FLOCK/USDT",
         "FLOKI/USDT",
-        "FOGO/USDT",
         "FORM/USDT",
         "FROGGIE/USDT",
         "FUEL/USDT",
@@ -6303,7 +6300,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "WARD/USDT",
         "WBTC/USDT",
         "WCT/USDT",
-        "WEMIX/USDT",
         "WIF/USDT",
         "WIN/USDT",
         "WLD/USDT",
@@ -6341,23 +6337,17 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "ZRX/USDT",
         "ZTC/USDT"
       ],
-      "count": 3665,
+      "count": 3661,
       "error": null
     }
   },
   "comparison": {
-    "previousSnapshot": "pairs-2026-11-05.json",
+    "previousSnapshot": "pairs-2026-11-06.json",
     "newPairs": {
       "binance": [],
       "okx": [],
       "bybit": [],
-      "bitget": [
-        "rEFV/USDT",
-        "rITA/USDT",
-        "rMTUM/USDT",
-        "rQUAL/USDT",
-        "rSOXX/USDT"
-      ]
+      "bitget": []
     }
   }
 };
