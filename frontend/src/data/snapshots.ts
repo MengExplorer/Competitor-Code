@@ -1,6 +1,6 @@
 // 该文件由 scripts/embed-data.mjs 自动生成，请勿手动编辑。
 // 快照来源目录: /home/runner/work/Competitor-Code/Competitor-Code/data/snapshots
-// App 快照: 2026-11-09.json  |  交易对快照: pairs-2026-11-09.json
+// App 快照: 2026-11-09.json  |  交易对快照: pairs-2026-11-10.json
 import type { AppSnapshot, PairsSnapshot, AppHistory } from '@/types';
 
 export const appSnapshot: AppSnapshot | null = {
@@ -71,7 +71,7 @@ export const appSnapshot: AppSnapshot | null = {
 };
 
 export const pairsSnapshot: PairsSnapshot | null = {
-  "collectedAt": "2026-11-09T07:23:26.908Z",
+  "collectedAt": "2026-11-10T07:52:12.637Z",
   "pairFormat": "BASE/QUOTE",
   "exchanges": {
     "binance": {
@@ -2399,6 +2399,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "XAAOI/USDT",
         "XAAPL/USDC",
         "XAAPL/USDT",
+        "XABBV/USDT",
         "XACN/USDT",
         "XADBE/USDT",
         "XAEHR/USDT",
@@ -2424,6 +2425,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "XBMNR/USDT",
         "XBOT/USDT",
         "XBRKB/USDT",
+        "XBSP/USDC",
         "XBSP/USDT",
         "XBX/USDT",
         "XCBRS/USDC",
@@ -2523,6 +2525,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "XNOW/USDT",
         "XNVDA/USDC",
         "XNVDA/USDT",
+        "XNVDL/USDT",
         "XOKLO/USDT",
         "XOKTA/USDT",
         "XON/USDT",
@@ -2563,8 +2566,10 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "XSHLD/USDT",
         "XSHOP/USDT",
         "XSIMO/USDT",
+        "XSKDD/USDT",
         "XSKHY/USDC",
         "XSKHY/USDT",
+        "XSKUU/USDT",
         "XSMCI/USDT",
         "XSMH/USDT",
         "XSNDK/USDC",
@@ -2665,7 +2670,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "ZRX/USDC",
         "ZRX/USDT"
       ],
-      "count": 1210,
+      "count": 1215,
       "error": null
     },
     "bybit": {
@@ -6343,14 +6348,18 @@ export const pairsSnapshot: PairsSnapshot | null = {
     }
   },
   "comparison": {
-    "previousSnapshot": "pairs-2026-11-08.json",
+    "previousSnapshot": "pairs-2026-11-09.json",
     "newPairs": {
       "binance": [],
-      "okx": [],
+      "okx": [
+        "XABBV/USDT",
+        "XBSP/USDC",
+        "XNVDL/USDT",
+        "XSKDD/USDT",
+        "XSKUU/USDT"
+      ],
       "bybit": [],
-      "bitget": [
-        "rBRKB/USDT"
-      ]
+      "bitget": []
     }
   }
 };
