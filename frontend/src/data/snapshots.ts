@@ -1,6 +1,6 @@
 // 该文件由 scripts/embed-data.mjs 自动生成，请勿手动编辑。
 // 快照来源目录: /home/runner/work/Competitor-Code/Competitor-Code/data/snapshots
-// App 快照: 2026-11-09.json  |  交易对快照: pairs-2026-11-13.json
+// App 快照: 2026-11-09.json  |  交易对快照: pairs-2026-11-14.json
 import type { AppSnapshot, PairsSnapshot, AppHistory } from '@/types';
 
 export const appSnapshot: AppSnapshot | null = {
@@ -71,7 +71,7 @@ export const appSnapshot: AppSnapshot | null = {
 };
 
 export const pairsSnapshot: PairsSnapshot | null = {
-  "collectedAt": "2026-11-13T07:27:30.665Z",
+  "collectedAt": "2026-11-14T07:08:56.646Z",
   "pairFormat": "BASE/QUOTE",
   "exchanges": {
     "binance": {
@@ -2520,6 +2520,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "XMETA/USDC",
         "XMETA/USDT",
         "XMP/USDT",
+        "XMPWR/USDT",
         "XMRK/USDT",
         "XMRNA/USDT",
         "XMRVL/USDC",
@@ -2686,7 +2687,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "ZRX/USDC",
         "ZRX/USDT"
       ],
-      "count": 1231,
+      "count": 1232,
       "error": null
     },
     "bybit": {
@@ -2726,7 +2727,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "ALIGN/USDT",
         "ALLO/USDT",
         "ALPH/USDT",
-        "ALPINE/USDT",
         "ANIME/USDT",
         "ANKR/USDT",
         "APE/USDT",
@@ -3081,7 +3081,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "Q/USDT",
         "QNT/USDT",
         "QTUM/USDT",
-        "QUBIC/USDT",
         "QUID/USDT",
         "rA/USDT",
         "rAA/USDT",
@@ -3966,7 +3965,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "rEMA/USDT",
         "rEMAT/USDT",
         "rEMB/USDT",
-        "rEMBJ/USDT",
         "rEME/USDT",
         "rEMN/USDT",
         "rEMR/USDT",
@@ -6358,18 +6356,16 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "ZRX/USDT",
         "ZTC/USDT"
       ],
-      "count": 3661,
+      "count": 3658,
       "error": null
     }
   },
   "comparison": {
-    "previousSnapshot": "pairs-2026-11-12.json",
+    "previousSnapshot": "pairs-2026-11-13.json",
     "newPairs": {
       "binance": [],
       "okx": [
-        "XGILD/USDT",
-        "XIBKR/USDT",
-        "XMP/USDT"
+        "XMPWR/USDT"
       ],
       "bybit": [],
       "bitget": []
