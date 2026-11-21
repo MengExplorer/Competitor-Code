@@ -1,6 +1,6 @@
 // 该文件由 scripts/embed-data.mjs 自动生成，请勿手动编辑。
 // 快照来源目录: /home/runner/work/Competitor-Code/Competitor-Code/data/snapshots
-// App 快照: 2026-11-16.json  |  交易对快照: pairs-2026-11-20.json
+// App 快照: 2026-11-16.json  |  交易对快照: pairs-2026-11-21.json
 import type { AppSnapshot, PairsSnapshot, AppHistory } from '@/types';
 
 export const appSnapshot: AppSnapshot | null = {
@@ -71,7 +71,7 @@ export const appSnapshot: AppSnapshot | null = {
 };
 
 export const pairsSnapshot: PairsSnapshot | null = {
-  "collectedAt": "2026-11-20T07:52:31.888Z",
+  "collectedAt": "2026-11-21T07:49:44.025Z",
   "pairFormat": "BASE/QUOTE",
   "exchanges": {
     "binance": {
@@ -1115,6 +1115,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "SLP/USDT",
         "SMCIB/USDT",
         "SMHB/USDT",
+        "SNDKB/USDT",
         "SNX/TRY",
         "SNX/USDC",
         "SNX/USDT",
@@ -1452,7 +1453,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "牛来/USDC",
         "牛来/USDT"
       ],
-      "count": 1375,
+      "count": 1376,
       "error": null
     },
     "okx": {
@@ -2846,6 +2847,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "CHZ/USDT",
         "CKB/USDT",
         "CLANKER/USDT",
+        "CLEAR/USDT",
         "CNPY/USDT",
         "COAI/USDT",
         "COLLECT/USDT",
@@ -3002,7 +3004,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "MAGMA/USDT",
         "MANA/USDT",
         "MANTA/USDT",
-        "MANTRA/USDT",
         "MAPO/USDT",
         "MAS/USDT",
         "MASK/USDT",
@@ -5172,7 +5173,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "rPAM/USDT",
         "rPANW/USDT",
         "rPAR/USDT",
-        "rPARA/USDT",
         "rPARR/USDT",
         "rPATH/USDT",
         "rPATK/USDT",
@@ -5597,6 +5597,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "rSNA/USDT",
         "rSNAP/USDT",
         "rSNDA/USDT",
+        "rSNDK/USDT",
         "rSNDQ/USDT",
         "rSNDR/USDT",
         "rSNDU/USDT",
@@ -6382,23 +6383,16 @@ export const pairsSnapshot: PairsSnapshot | null = {
     }
   },
   "comparison": {
-    "previousSnapshot": "pairs-2026-11-19.json",
+    "previousSnapshot": "pairs-2026-11-20.json",
     "newPairs": {
       "binance": [
-        "ANTB/USDT"
+        "SNDKB/USDT"
       ],
-      "okx": [
-        "XANT/USDC",
-        "XANT/USDT",
-        "XTLT/USDT"
-      ],
+      "okx": [],
       "bybit": [],
       "bitget": [
-        "rANT/USDT",
-        "rBITI/USDT",
-        "rBITO/USDT",
-        "rQID/USDT",
-        "rRWM/USDT"
+        "CLEAR/USDT",
+        "rSNDK/USDT"
       ]
     }
   }
