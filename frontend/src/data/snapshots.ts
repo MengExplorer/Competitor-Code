@@ -1,6 +1,6 @@
 // 该文件由 scripts/embed-data.mjs 自动生成，请勿手动编辑。
 // 快照来源目录: /home/runner/work/Competitor-Code/Competitor-Code/data/snapshots
-// App 快照: 2026-11-23.json  |  交易对快照: pairs-2026-11-23.json
+// App 快照: 2026-11-23.json  |  交易对快照: pairs-2026-11-24.json
 import type { AppSnapshot, PairsSnapshot, AppHistory } from '@/types';
 
 export const appSnapshot: AppSnapshot | null = {
@@ -71,7 +71,7 @@ export const appSnapshot: AppSnapshot | null = {
 };
 
 export const pairsSnapshot: PairsSnapshot | null = {
-  "collectedAt": "2026-11-23T08:24:04.648Z",
+  "collectedAt": "2026-11-24T10:31:58.973Z",
   "pairFormat": "BASE/QUOTE",
   "exchanges": {
     "binance": {
@@ -5173,6 +5173,7 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "rPAM/USDT",
         "rPANW/USDT",
         "rPAR/USDT",
+        "rPARA/USDT",
         "rPARR/USDT",
         "rPATH/USDT",
         "rPATK/USDT",
@@ -6378,17 +6379,19 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "ZRX/USDT",
         "ZTC/USDT"
       ],
-      "count": 3658,
+      "count": 3659,
       "error": null
     }
   },
   "comparison": {
-    "previousSnapshot": "pairs-2026-11-22.json",
+    "previousSnapshot": "pairs-2026-11-23.json",
     "newPairs": {
       "binance": [],
       "okx": [],
       "bybit": [],
-      "bitget": []
+      "bitget": [
+        "rPARA/USDT"
+      ]
     }
   }
 };
