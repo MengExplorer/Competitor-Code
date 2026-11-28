@@ -1,6 +1,6 @@
 // 该文件由 scripts/embed-data.mjs 自动生成，请勿手动编辑。
 // 快照来源目录: /home/runner/work/Competitor-Code/Competitor-Code/data/snapshots
-// App 快照: 2026-11-23.json  |  交易对快照: pairs-2026-11-27.json
+// App 快照: 2026-11-23.json  |  交易对快照: pairs-2026-11-28.json
 import type { AppSnapshot, PairsSnapshot, AppHistory } from '@/types';
 
 export const appSnapshot: AppSnapshot | null = {
@@ -71,7 +71,7 @@ export const appSnapshot: AppSnapshot | null = {
 };
 
 export const pairsSnapshot: PairsSnapshot | null = {
-  "collectedAt": "2026-11-27T09:14:50.552Z",
+  "collectedAt": "2026-11-28T08:32:56.845Z",
   "pairFormat": "BASE/QUOTE",
   "exchanges": {
     "binance": {
@@ -3010,7 +3010,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "MANA/USDT",
         "MANTA/USDT",
         "MAPO/USDT",
-        "MAS/USDT",
         "MASK/USDT",
         "MAV/USDT",
         "MAXEXCHANGE/USDT",
@@ -3092,7 +3091,6 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "POWER/USDT",
         "preOPAI/USDT",
         "preSPCX/USDT",
-        "PRIME/USDT",
         "PRL/USDT",
         "PROMPT/USDT",
         "PROPS/USDT",
@@ -6374,12 +6372,12 @@ export const pairsSnapshot: PairsSnapshot | null = {
         "ZRX/USDT",
         "ZTC/USDT"
       ],
-      "count": 3649,
+      "count": 3647,
       "error": null
     }
   },
   "comparison": {
-    "previousSnapshot": "pairs-2026-11-26.json",
+    "previousSnapshot": "pairs-2026-11-27.json",
     "newPairs": {
       "binance": [],
       "okx": [],
